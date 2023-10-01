@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://cxlvx60t1mgv"]
+
+[ext_resource type="Script" path="res://Scripts/Card.cs" id="1_yfppv"]
+[ext_resource type="Texture2D" uid="uid://b70wf3ojc8qlv" path="res://Textures/Cards/card_pickhead_iron.png" id="2_o17ak"]
+
+[resource]
+script = ExtResource("1_yfppv")
+durability = 3
+power = 1
+style = 1
+slots = 2
+texture = ExtResource("2_o17ak")
+identifier = "card.head.pick.iron"

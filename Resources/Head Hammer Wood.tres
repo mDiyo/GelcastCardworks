@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://cnin54wri6yma"]
+
+[ext_resource type="Script" path="res://Scripts/Card.cs" id="1_y77w8"]
+[ext_resource type="Texture2D" uid="uid://bnynhqmatdk34" path="res://Textures/Cards/card_hammerhead_wood.png" id="2_846ea"]
+
+[resource]
+script = ExtResource("1_y77w8")
+durability = 4
+power = 0
+style = 0
+slots = 3
+texture = ExtResource("2_846ea")
+identifier = "card.head.hammer.wood"

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://cjp2rigf4gts2"]
+
+[ext_resource type="Script" path="res://Scripts/CardDuringExam.cs" id="1_38pvg"]
+[ext_resource type="Texture2D" uid="uid://cl3o4r8wp0w6" path="res://Textures/Cards/card_upgrade_quartz.png" id="2_gattb"]
+
+[resource]
+script = ExtResource("1_38pvg")
+boostTarget = 1
+durabilityArmor = 0
+powerBoost = 0
+styleBoost = 2
+durabilityTheft = 0
+cardClass = 1
+durability = 0
+power = 0
+style = 0
+slots = 0
+texture = ExtResource("2_gattb")
+identifier = "card.upgrade.quartz"

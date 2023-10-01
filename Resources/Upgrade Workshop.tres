@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://b5gi1lceaixqb"]
+
+[ext_resource type="Script" path="res://Scripts/CardMetaManipulation.cs" id="1_0l1b1"]
+
+[resource]
+script = ExtResource("1_0l1b1")
+examAmount = 0
+moraleRecovery = 0
+cardClass = 1
+durability = 0
+power = 0
+style = 0
+slots = 0
+identifier = ""

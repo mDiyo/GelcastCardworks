@@ -1,0 +1,20 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://gydwboubm1m1"]
+
+[ext_resource type="Script" path="res://Scripts/CardSoul.cs" id="1_twrbw"]
+[ext_resource type="Texture2D" uid="uid://xobd5u20osvt" path="res://Textures/Cards/card_upgrade_slimesoul.png" id="2_g72xh"]
+
+[resource]
+script = ExtResource("1_twrbw")
+soulType = "slime"
+durabilityBoost = 0
+powerBoost = 0
+styleBoost = 1
+drawBoost = 0
+drawBase = 0
+cardClass = 1
+durability = 0
+power = 0
+style = 1
+slots = 0
+texture = ExtResource("2_g72xh")
+identifier = "card.upgrade.soul.slime"

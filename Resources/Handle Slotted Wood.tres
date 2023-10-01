@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://gqe4fuc382gc"]
+
+[ext_resource type="Script" path="res://Scripts/Card.cs" id="1_kmnib"]
+[ext_resource type="Texture2D" uid="uid://1020c2u4q1iq" path="res://Textures/Cards/card_slotrod_wood.png" id="2_sif53"]
+
+[resource]
+script = ExtResource("1_kmnib")
+durability = 1
+power = 0
+style = 0
+slots = 2
+texture = ExtResource("2_sif53")
+identifier = "card.handle.slotted.wood"

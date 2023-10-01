@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://bkg836xjaafov"]
+
+[ext_resource type="Script" path="res://Scripts/Card.cs" id="1_ujx2s"]
+[ext_resource type="Texture2D" uid="uid://byer00w0pi5kx" path="res://Textures/Cards/card_bladehead_slime.png" id="2_pbpdb"]
+
+[resource]
+script = ExtResource("1_ujx2s")
+durability = 2
+power = 3
+style = 1
+slots = 1
+texture = ExtResource("2_pbpdb")
+identifier = "card.head.blade.slime"

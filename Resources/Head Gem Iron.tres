@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://bakuvop7lwe0g"]
+
+[ext_resource type="Script" path="res://Scripts/Card.cs" id="1_0xuiy"]
+[ext_resource type="Texture2D" uid="uid://cqypq5povras4" path="res://Textures/Cards/card_gemhead_iron.png" id="2_8furi"]
+
+[resource]
+script = ExtResource("1_0xuiy")
+durability = 3
+power = 0
+style = 3
+slots = 1
+texture = ExtResource("2_8furi")
+identifier = "card.head.gem.iron"

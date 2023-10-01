@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://cdtgeqxkm52x8"]
+
+[ext_resource type="Script" path="res://Scripts/Card.cs" id="1_2s8et"]
+[ext_resource type="Texture2D" uid="uid://bpum70ncfjgjf" path="res://Textures/Cards/card_toughrod_magic.png" id="2_y17c4"]
+
+[resource]
+script = ExtResource("1_2s8et")
+durability = 3
+power = 1
+style = 0
+slots = 0
+texture = ExtResource("2_y17c4")
+identifier = "card.handle.tough.magic"

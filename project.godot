@@ -1,0 +1,55 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[Tinker's Cardworks]
+
+config/achievements/local_source="res://"
+config/achievements/remote_source="https://"
+config/achievements/save_directory="C:/Users/mDiyo/AppData/Roaming/Godot/app_userdata/Tinker's Cardworks"
+config/achievements/save_file_name="achievements.json"
+config/achievements/password="AAmr5JG0vhCgyZmOFRiTMm6a5"
+config/godotenv/root_directory="res://"
+
+[application]
+
+config/name="Tinker's Cardworks"
+config/tags=PackedStringArray("gelcast")
+run/main_scene="res://Prefabs/main_scene.tscn"
+config/features=PackedStringArray("4.1", "C#", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+Helpers="*res://addons/2d_essentials/autoload/helpers.tscn"
+GodotEssentialsHelpers="*res://addons/2d_essentials/autoload/helpers.gd"
+GodotEssentialsAudio="*res://addons/2d_essentials/autoload/audio/audio.gd"
+GodotEssentialsSceneTransitioner="*res://addons/2d_essentials/autoload/scene_transitions/scene_transitioner.gd"
+GodotEssentialsAchievements="*res://addons/2d_essentials/autoload/achievements/achievements.tscn"
+GodotEssentialsEnvironment="*res://addons/2d_essentials/autoload/dotenv/godotenv.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="viewport"
+window/stretch/scale=2.0
+
+[dotnet]
+
+project/assembly_name="Tinker-s Cardworks"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/2d_essentials/plugin.cfg", "res://addons/gelcast/plugin.cfg")
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+environment/defaults/default_clear_color=Color(0.164706, 0.470588, 0.156863, 1)

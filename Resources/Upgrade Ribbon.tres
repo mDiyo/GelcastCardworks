@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://c50w8h808ewn"]
+
+[ext_resource type="Script" path="res://Scripts/CardDuringExam.cs" id="1_3qkk4"]
+[ext_resource type="Texture2D" uid="uid://daj4qspybd4ia" path="res://Textures/Cards/card_upgrade_ribbon.png" id="2_wuvd8"]
+
+[resource]
+script = ExtResource("1_3qkk4")
+boostTarget = 0
+durabilityArmor = 0
+powerBoost = 0
+styleBoost = 2
+durabilityTheft = 0
+cardClass = 1
+durability = 0
+power = 0
+style = 0
+slots = 0
+texture = ExtResource("2_wuvd8")
+identifier = "card.upgrade.ribbon"

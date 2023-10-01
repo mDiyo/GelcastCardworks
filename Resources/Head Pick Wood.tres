@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://cmue5f1blpxqy"]
+
+[ext_resource type="Script" path="res://Scripts/Card.cs" id="1_ldco4"]
+[ext_resource type="Texture2D" uid="uid://cospw78fidnv7" path="res://Textures/Cards/card_pickhead_wood.png" id="2_h7lg6"]
+
+[resource]
+script = ExtResource("1_ldco4")
+durability = 3
+power = 1
+style = 1
+slots = 2
+texture = ExtResource("2_h7lg6")
+identifier = "card.head.pick.wood"

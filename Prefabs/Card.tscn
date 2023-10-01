@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://domeiwo6dfuu6"]
+
+[ext_resource type="Texture2D" uid="uid://c628601qtjqcj" path="res://Textures/Cards/card_error.png" id="1_23wfl"]
+[ext_resource type="Script" path="res://Scripts/CardInstance.cs" id="2_nib1h"]
+
+[node name="Card" type="Sprite2D"]
+texture = ExtResource("1_23wfl")
+script = ExtResource("2_nib1h")
+identifier = "card.error"

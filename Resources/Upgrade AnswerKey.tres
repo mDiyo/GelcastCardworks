@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://b2rvujh1mldhg"]
+
+[ext_resource type="Script" path="res://Scripts/CardMetaManipulation.cs" id="1_20d87"]
+[ext_resource type="Texture2D" uid="uid://bxjxjjvs2lt5i" path="res://Textures/Cards/card_upgrade_cheat.png" id="2_vfpsn"]
+
+[resource]
+script = ExtResource("1_20d87")
+examAmount = -1
+moraleRecovery = 0
+durability = 0
+power = 0
+style = 0
+slots = 0
+texture = ExtResource("2_vfpsn")
+identifier = "card.upgrade.cheat"

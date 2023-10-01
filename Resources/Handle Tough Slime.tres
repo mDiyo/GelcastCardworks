@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://b31spksr8snc7"]
+
+[ext_resource type="Script" path="res://Scripts/Card.cs" id="1_2yod0"]
+[ext_resource type="Texture2D" uid="uid://b2jewmaqy50es" path="res://Textures/Cards/card_toughrod_slime.png" id="2_5n87w"]
+
+[resource]
+script = ExtResource("1_2yod0")
+durability = 3
+power = 0
+style = 1
+slots = 0
+texture = ExtResource("2_5n87w")
+identifier = "card.handle.tough.slime"

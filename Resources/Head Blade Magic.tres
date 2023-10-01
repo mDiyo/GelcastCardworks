@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://5eh1cvf8t2mc"]
+
+[ext_resource type="Script" path="res://Scripts/Card.cs" id="1_pfh7l"]
+[ext_resource type="Texture2D" uid="uid://bqkttruj1ml5u" path="res://Textures/Cards/card_bladehead_magic.png" id="2_xv0rm"]
+
+[resource]
+script = ExtResource("1_pfh7l")
+durability = 2
+power = 4
+style = 0
+slots = 1
+texture = ExtResource("2_xv0rm")
+identifier = "card.head.blade.magic"

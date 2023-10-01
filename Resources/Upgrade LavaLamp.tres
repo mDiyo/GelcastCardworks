@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://dadgs5kxssn0q"]
+
+[ext_resource type="Script" path="res://Scripts/CardDuringExam.cs" id="1_gubww"]
+[ext_resource type="Texture2D" uid="uid://dxr0yituxmjut" path="res://Textures/Cards/card_upgrade_lavalamp.png" id="2_sievi"]
+
+[resource]
+script = ExtResource("1_gubww")
+boostTarget = 1
+durabilityArmor = 0
+powerBoost = 2
+styleBoost = 0
+durabilityTheft = 0
+cardClass = 1
+durability = 0
+power = 0
+style = 0
+slots = 0
+texture = ExtResource("2_sievi")
+identifier = "card.upgrade.lavalamp"

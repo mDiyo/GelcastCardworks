@@ -1,0 +1,20 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://badbjgarr0m8k"]
+
+[ext_resource type="Script" path="res://Scripts/CardSoul.cs" id="1_6ogut"]
+[ext_resource type="Texture2D" uid="uid://ci3ph32x1fecb" path="res://Textures/Cards/card_upgrade_woodsoul.png" id="2_231xg"]
+
+[resource]
+script = ExtResource("1_6ogut")
+soulType = "wood"
+durabilityBoost = 0
+powerBoost = 0
+styleBoost = 0
+drawBoost = 1
+drawBase = 1
+cardClass = 1
+durability = 0
+power = 0
+style = 0
+slots = 0
+texture = ExtResource("2_231xg")
+identifier = "card.upgrade.soul.wood"

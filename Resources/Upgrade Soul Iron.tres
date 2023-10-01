@@ -1,0 +1,20 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://cby0bdvxss1vw"]
+
+[ext_resource type="Script" path="res://Scripts/CardSoul.cs" id="1_jljsj"]
+[ext_resource type="Texture2D" uid="uid://ca6ifoc8vequ2" path="res://Textures/Cards/card_upgrade_ironsoul.png" id="2_aitsj"]
+
+[resource]
+script = ExtResource("1_jljsj")
+soulType = "iron"
+durabilityBoost = 1
+powerBoost = 0
+styleBoost = 0
+drawBoost = 0
+drawBase = 0
+cardClass = 1
+durability = 1
+power = 0
+style = 0
+slots = 0
+texture = ExtResource("2_aitsj")
+identifier = "card.upgrade.soul.iron"

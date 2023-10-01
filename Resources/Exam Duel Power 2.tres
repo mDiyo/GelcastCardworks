@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://286t4y285ud7"]
+
+[ext_resource type="Script" path="res://Scripts/Exam.cs" id="1_fha2e"]
+[ext_resource type="Texture2D" uid="uid://tshx6alxrlnt" path="res://Textures/Cards/card_duel_power2.png" id="2_i2atq"]
+
+[resource]
+script = ExtResource("1_fha2e")
+examType = 1
+examSkill = 0
+potency = 0
+texture = ExtResource("2_i2atq")
+identifier = "exam.duel.power.2"

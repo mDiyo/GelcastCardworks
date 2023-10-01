@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://b1t1yj5n4n8ra"]
+
+[ext_resource type="Script" path="res://Scripts/Card.cs" id="1_4gf64"]
+[ext_resource type="Texture2D" uid="uid://cpe88k0de286b" path="res://Textures/Cards/card_straightrod_magic.png" id="2_1a1lb"]
+
+[resource]
+script = ExtResource("1_4gf64")
+durability = 2
+power = 1
+style = 0
+slots = 1
+texture = ExtResource("2_1a1lb")
+identifier = "card.handle.straight.magic"

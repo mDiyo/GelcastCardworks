@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://cy5m54ajrmg8y"]
+
+[ext_resource type="Script" path="res://Scripts/CardDuringExam.cs" id="1_n1v8o"]
+[ext_resource type="Texture2D" uid="uid://cj2tqrqlkkjqp" path="res://Textures/Cards/card_upgrade_necroshroom.png" id="2_k40rw"]
+
+[resource]
+script = ExtResource("1_n1v8o")
+boostTarget = 0
+durabilityArmor = 0
+powerBoost = 0
+styleBoost = 0
+durabilityTheft = 1
+cardClass = 1
+durability = 0
+power = 0
+style = 0
+slots = 0
+texture = ExtResource("2_k40rw")
+identifier = "card.upgrade.necroshroom"

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://3mg04ju3f2mv"]
+
+[ext_resource type="Script" path="res://Scripts/Card.cs" id="1_vvrdi"]
+[ext_resource type="Texture2D" uid="uid://ceyklgggqwt4j" path="res://Textures/Cards/card_slotrod_slime.png" id="2_dwcnt"]
+
+[resource]
+script = ExtResource("1_vvrdi")
+durability = 0
+power = 0
+style = 1
+slots = 2
+texture = ExtResource("2_dwcnt")
+identifier = "card.handle.slotted.slime"

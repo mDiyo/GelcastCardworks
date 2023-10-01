@@ -1,0 +1,6 @@
+[gd_resource type="Texture2DArray" load_steps=2 format=3 uid="uid://dddri51xpw5td"]
+
+[ext_resource type="Script" path="res://addons/gelcast/Texture2DArrayMoar.cs" id="1_roug2"]
+
+[resource]
+script = ExtResource("1_roug2")

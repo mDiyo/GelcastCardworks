@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://bsph8pwmomn6d"]
+
+[ext_resource type="Script" path="res://Scripts/Exam.cs" id="1_2j2j7"]
+[ext_resource type="Texture2D" uid="uid://cgau8vmvb0jjl" path="res://Textures/Cards/card_contest_power5.png" id="2_02cm4"]
+
+[resource]
+script = ExtResource("1_2j2j7")
+examType = 0
+examSkill = 0
+potency = 5
+texture = ExtResource("2_02cm4")
+identifier = "exam.contest.power.5"

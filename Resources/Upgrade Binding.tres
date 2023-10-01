@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://bbnd7w2oc8s5m"]
+
+[ext_resource type="Script" path="res://Scripts/Card.cs" id="1_u8lht"]
+[ext_resource type="Texture2D" uid="uid://b0582c6kh05t5" path="res://Textures/Cards/card_upgrade_binding.png" id="2_2n42b"]
+
+[resource]
+script = ExtResource("1_u8lht")
+cardClass = 1
+durability = 1
+power = 0
+style = 0
+slots = 0
+texture = ExtResource("2_2n42b")
+identifier = "card.upgrade.binding"

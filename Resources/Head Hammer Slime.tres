@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://chfhyye52ydp3"]
+
+[ext_resource type="Script" path="res://Scripts/Card.cs" id="1_uym5v"]
+[ext_resource type="Texture2D" uid="uid://yj2237nsubp4" path="res://Textures/Cards/card_hammerhead_slime.png" id="2_1pkkh"]
+
+[resource]
+script = ExtResource("1_uym5v")
+durability = 4
+power = 0
+style = 1
+slots = 2
+texture = ExtResource("2_1pkkh")
+identifier = "card.head.hammer.slime"

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://dihfbvnfhhosv"]
+
+[ext_resource type="Script" path="res://Scripts/Card.cs" id="1_tash4"]
+[ext_resource type="Texture2D" uid="uid://bl4jhp5u0mahr" path="res://Textures/Cards/card_hammerhead_magic.png" id="2_0p2jw"]
+
+[resource]
+script = ExtResource("1_tash4")
+durability = 4
+power = 1
+style = 0
+slots = 2
+texture = ExtResource("2_0p2jw")
+identifier = "card.head.hammer.magic"

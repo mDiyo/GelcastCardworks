@@ -1,0 +1,20 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://di8uktu6hpxxy"]
+
+[ext_resource type="Script" path="res://Scripts/CardSoul.cs" id="1_sf4ww"]
+[ext_resource type="Texture2D" uid="uid://cwdlhbtnt3btk" path="res://Textures/Cards/card_upgrade_magicsoul.png" id="2_vtr8q"]
+
+[resource]
+script = ExtResource("1_sf4ww")
+soulType = "magic"
+durabilityBoost = 0
+powerBoost = 1
+styleBoost = 0
+drawBoost = 0
+drawBase = 0
+cardClass = 1
+durability = 0
+power = 1
+style = 0
+slots = 0
+texture = ExtResource("2_vtr8q")
+identifier = "card.upgrade.soul.magic"

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://b8k84sqkjt2bp"]
+
+[ext_resource type="Script" path="res://Scripts/Card.cs" id="1_55ol7"]
+[ext_resource type="Texture2D" uid="uid://b70wf3ojc8qlv" path="res://Textures/Cards/card_pickhead_iron.png" id="2_0iovg"]
+
+[resource]
+script = ExtResource("1_55ol7")
+durability = 4
+power = 1
+style = 1
+slots = 1
+texture = ExtResource("2_0iovg")
+identifier = "card.head.hammer.iron"

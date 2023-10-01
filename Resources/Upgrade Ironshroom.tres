@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://0j842pmcie1u"]
+
+[ext_resource type="Script" path="res://Scripts/CardDuringExam.cs" id="1_m1so1"]
+[ext_resource type="Texture2D" uid="uid://b7kmyaiae0606" path="res://Textures/Cards/card_upgrade_ironshroom.png" id="2_gm6ha"]
+
+[resource]
+script = ExtResource("1_m1so1")
+boostTarget = 2
+durabilityArmor = 1
+powerBoost = 0
+styleBoost = 0
+durabilityTheft = 0
+cardClass = 1
+durability = 0
+power = 0
+style = 0
+slots = 0
+texture = ExtResource("2_gm6ha")
+identifier = "card.upgrade.ironshroom"

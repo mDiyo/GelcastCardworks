@@ -1,6 +1,7 @@
-[gd_resource type="Resource" load_steps=3 format=3 uid="uid://c8kcva4bk3pfg"]
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://c8kcva4bk3pfg"]
 
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_0kfqa"]
+[ext_resource type="Texture2D" path="res://Textures/Tools/Slices/handle_quality_wood.tres" id="1_d81x5"]
 [ext_resource type="Texture2D" uid="uid://bdc07clt8jiop" path="res://Textures/Cards/card_qualityrod_wood.png" id="2_rld1u"]
 
 [resource]
@@ -11,4 +12,6 @@ power = 1
 style = 1
 slots = 1
 texture = ExtResource("2_rld1u")
+itemSprite = ExtResource("1_d81x5")
+itemOverrides = null
 identifier = "card.handle.quality.wood"

@@ -1,13 +1,17 @@
-[gd_resource type="Resource" load_steps=3 format=3 uid="uid://dawkj4xdwkc67"]
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://dawkj4xdwkc67"]
 
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_e5f1t"]
+[ext_resource type="Texture2D" uid="uid://caxxvowikxykg" path="res://Textures/Tools/Slices/head_pick_slime.tres" id="1_ouyko"]
 [ext_resource type="Texture2D" uid="uid://b7ygh2kl5mhgp" path="res://Textures/Cards/card_pickhead_slime.png" id="2_i81nn"]
 
 [resource]
 script = ExtResource("1_e5f1t")
+type = 0
 durability = 3
 power = 1
 style = 2
 slots = 1
 texture = ExtResource("2_i81nn")
+itemSprite = ExtResource("1_ouyko")
+itemOverrides = null
 identifier = "card.head.pick.slime"

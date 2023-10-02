@@ -12,6 +12,20 @@ namespace Gelcast.Example.Card
 		[Export] public int style;
 		[Export] public int slots;
 		[Export] public Texture2D texture;
+		[Export] public Texture2D itemSprite;
+		[Export] public ItemOverride[] itemOverrides;
 		[Export] public string identifier;
+
+		public Texture2D GetItemSprite()
+		{
+			return itemSprite;
+		}
+	}
+
+	public partial class ItemOverride : Resource
+	{
+		[Export] public string materialOverride;
+		[Export] public string classOverride;
+		[Export] public Texture2D itemSprite;
 	}
 }

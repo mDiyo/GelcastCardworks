@@ -1,13 +1,17 @@
-[gd_resource type="Resource" load_steps=3 format=3 uid="uid://dr78e3nh7iw00"]
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://dr78e3nh7iw00"]
 
+[ext_resource type="Texture2D" uid="uid://dmor4w24lsyq2" path="res://Textures/Tools/Slices/handle_straight_iron.tres" id="1_ea0ov"]
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_epjkq"]
 [ext_resource type="Texture2D" uid="uid://cxf6wy6gou07c" path="res://Textures/Cards/card_bladehead_iron.png" id="2_sobtt"]
 
 [resource]
 script = ExtResource("1_epjkq")
+type = 0
 durability = 3
 power = 3
 style = 0
 slots = 1
 texture = ExtResource("2_sobtt")
+itemSprite = ExtResource("1_ea0ov")
+itemOverrides = null
 identifier = "card.head.blade.iron"

@@ -1,14 +1,17 @@
-[gd_resource type="Resource" load_steps=3 format=3 uid="uid://mn7cknxw0k1d"]
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://mn7cknxw0k1d"]
 
+[ext_resource type="Texture2D" uid="uid://w7mlvmv8nvr4" path="res://Textures/Tools/Slices/upgrade_brooch.tres" id="1_avi06"]
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_n8srm"]
 [ext_resource type="Texture2D" uid="uid://dp4kb3aj5d05q" path="res://Textures/Cards/card_upgrade_brooch.png" id="2_2a682"]
 
 [resource]
 script = ExtResource("1_n8srm")
-cardClass = 1
+type = 0
 durability = 0
 power = 0
 style = 1
 slots = 0
 texture = ExtResource("2_2a682")
+itemSprite = ExtResource("1_avi06")
+itemOverrides = null
 identifier = "card.upgrade.brooch"

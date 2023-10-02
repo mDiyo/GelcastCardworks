@@ -1,5 +1,6 @@
-[gd_resource type="Resource" load_steps=3 format=3 uid="uid://x764n637tvhc"]
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://x764n637tvhc"]
 
+[ext_resource type="Texture2D" path="res://Textures/Tools/Slices/handle_quality_magic.tres" id="1_6fqb7"]
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_61k0f"]
 [ext_resource type="Texture2D" uid="uid://04mwl6v3lvwr" path="res://Textures/Cards/card_quailtyrod_magic.png" id="2_x8i8j"]
 
@@ -11,4 +12,6 @@ power = 2
 style = 1
 slots = 0
 texture = ExtResource("2_x8i8j")
+itemSprite = ExtResource("1_6fqb7")
+itemOverrides = null
 identifier = "card.handle.quality.magic"

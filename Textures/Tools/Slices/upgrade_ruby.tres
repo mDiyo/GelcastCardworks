@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://bfcw06tj1j7yk"]
+
+[ext_resource type="Texture2D" uid="uid://7jhoax2enrqf" path="res://Textures/Tools/cardworks_upgrades.png" id="1_3y82u"]
+
+[resource]
+atlas = ExtResource("1_3y82u")
+region = Rect2(16, 48, 16, 16)

@@ -1,13 +1,17 @@
-[gd_resource type="Resource" load_steps=3 format=3 uid="uid://bjto3rg16h0o"]
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://bjto3rg16h0o"]
 
+[ext_resource type="Texture2D" uid="uid://cigq11wa1libd" path="res://Textures/Tools/Slices/head_blade_wood.tres" id="1_2vuey"]
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_qpej5"]
 [ext_resource type="Texture2D" uid="uid://8qtqrd66hp85" path="res://Textures/Cards/card_bladehead_wood.png" id="2_2judk"]
 
 [resource]
 script = ExtResource("1_qpej5")
+type = 0
 durability = 2
 power = 3
 style = 0
 slots = 2
 texture = ExtResource("2_2judk")
+itemSprite = ExtResource("1_2vuey")
+itemOverrides = null
 identifier = "card.head.blade.wood"

@@ -1,6 +1,7 @@
-[gd_resource type="Resource" load_steps=3 format=3 uid="uid://b42yu3oy8tlbj"]
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://b42yu3oy8tlbj"]
 
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_gonce"]
+[ext_resource type="Texture2D" path="res://Textures/Tools/Slices/handle_quality_iron.tres" id="1_rr0yi"]
 [ext_resource type="Texture2D" uid="uid://cnduf6in07mgq" path="res://Textures/Cards/card_straightrod_iron.png" id="2_cljbf"]
 
 [resource]
@@ -11,4 +12,6 @@ power = 0
 style = 0
 slots = 1
 texture = ExtResource("2_cljbf")
+itemSprite = ExtResource("1_rr0yi")
+itemOverrides = null
 identifier = "card.handle.quality.iron"

@@ -1,13 +1,17 @@
-[gd_resource type="Resource" load_steps=3 format=3 uid="uid://bjdu0v2csnysv"]
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://bjdu0v2csnysv"]
 
+[ext_resource type="Texture2D" uid="uid://b25s5sb1xw8aa" path="res://Textures/Tools/Slices/handle_straight_wood.tres" id="1_06yhd"]
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_a4rva"]
 [ext_resource type="Texture2D" uid="uid://bfyvwchs0vhdq" path="res://Textures/Cards/card_straightrod_wood.png" id="2_rmuy4"]
 
 [resource]
 script = ExtResource("1_a4rva")
+type = 0
 durability = 2
 power = 0
 style = 0
 slots = 2
 texture = ExtResource("2_rmuy4")
+itemSprite = ExtResource("1_06yhd")
+itemOverrides = null
 identifier = "card.handle.straight.wood"

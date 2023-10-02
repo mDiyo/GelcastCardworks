@@ -1,13 +1,17 @@
-[gd_resource type="Resource" load_steps=3 format=3 uid="uid://btgtk18mhkhkx"]
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://btgtk18mhkhkx"]
 
+[ext_resource type="Texture2D" path="res://Textures/Tools/Slices/head_gem_slime.tres" id="1_fgid3"]
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_j4xc8"]
 [ext_resource type="Texture2D" uid="uid://cn6u87btt1muj" path="res://Textures/Cards/card_gemhead_slime.png" id="2_5cwdy"]
 
 [resource]
 script = ExtResource("1_j4xc8")
+type = 0
 durability = 2
 power = 0
 style = 4
 slots = 1
 texture = ExtResource("2_5cwdy")
+itemSprite = ExtResource("1_fgid3")
+itemOverrides = null
 identifier = "card.head.gem.slime"

@@ -18,10 +18,10 @@
 [ext_resource type="Resource" uid="uid://cmbgy1w8xumkr" path="res://Resources/Head Pick Magic.tres" id="15_tic0a"]
 [ext_resource type="Resource" uid="uid://dawkj4xdwkc67" path="res://Resources/Head Pick Slime.tres" id="16_mapfr"]
 [ext_resource type="Resource" uid="uid://cmue5f1blpxqy" path="res://Resources/Head Pick Wood.tres" id="17_cqel4"]
-[ext_resource type="Resource" uid="uid://b42yu3oy8tlbj" path="res://Resources/Handle Comfy Iron.tres" id="18_o0c3l"]
-[ext_resource type="Resource" uid="uid://x764n637tvhc" path="res://Resources/Handle Comfy Magic.tres" id="19_hmihg"]
-[ext_resource type="Resource" uid="uid://7susgw4cdvub" path="res://Resources/Handle Comfy Slime.tres" id="20_y557k"]
-[ext_resource type="Resource" uid="uid://c8kcva4bk3pfg" path="res://Resources/Handle Comfy Wood.tres" id="21_8l58b"]
+[ext_resource type="Resource" uid="uid://b42yu3oy8tlbj" path="res://Resources/Handle Quality Iron.tres" id="19_r1ijr"]
+[ext_resource type="Resource" uid="uid://x764n637tvhc" path="res://Resources/Handle Quality Magic.tres" id="20_ucusq"]
+[ext_resource type="Resource" uid="uid://7susgw4cdvub" path="res://Resources/Handle Quality Slime.tres" id="21_b46dg"]
+[ext_resource type="Resource" uid="uid://c8kcva4bk3pfg" path="res://Resources/Handle Quality Wood.tres" id="22_tg0yn"]
 [ext_resource type="Resource" uid="uid://dhfiwfxfsbpa8" path="res://Resources/Handle Slotted Iron.tres" id="22_urvqc"]
 [ext_resource type="Resource" uid="uid://bkd01kj67rg3e" path="res://Resources/Handle Slotted Magic.tres" id="23_mwg0g"]
 [ext_resource type="Resource" uid="uid://3mg04ju3f2mv" path="res://Resources/Handle Slotted Slime.tres" id="24_gqvci"]
@@ -75,7 +75,7 @@ gameFlow = NodePath("Gameflow")
 [node name="Gameflow" type="Node2D" parent="."]
 script = ExtResource("1_myaw3")
 headCards = Array[Resource]([ExtResource("2_urkuo"), ExtResource("3_xpgih"), ExtResource("4_4elyt"), ExtResource("5_44xi1"), ExtResource("6_3acno"), ExtResource("7_1irws"), ExtResource("8_1qfov"), ExtResource("9_01hhr"), ExtResource("10_o0jdm"), ExtResource("11_tq4qj"), ExtResource("12_qlo6o"), ExtResource("13_xtyei"), ExtResource("14_jwq5a"), ExtResource("15_tic0a"), ExtResource("16_mapfr"), ExtResource("17_cqel4")])
-handleCards = Array[Resource]([ExtResource("18_o0c3l"), ExtResource("19_hmihg"), ExtResource("20_y557k"), ExtResource("21_8l58b"), ExtResource("22_urvqc"), ExtResource("23_mwg0g"), ExtResource("24_gqvci"), ExtResource("25_38gyi"), ExtResource("26_b60sy"), ExtResource("27_der7y"), ExtResource("28_b6tft"), ExtResource("29_4yq4m"), ExtResource("30_gaiqv"), ExtResource("31_hs1ay"), ExtResource("32_xvaby"), ExtResource("33_4hxfm")])
+handleCards = Array[Resource]([ExtResource("19_r1ijr"), ExtResource("20_ucusq"), ExtResource("21_b46dg"), ExtResource("22_tg0yn"), ExtResource("22_urvqc"), ExtResource("23_mwg0g"), ExtResource("24_gqvci"), ExtResource("25_38gyi"), ExtResource("26_b60sy"), ExtResource("27_der7y"), ExtResource("28_b6tft"), ExtResource("29_4yq4m"), ExtResource("30_gaiqv"), ExtResource("31_hs1ay"), ExtResource("32_xvaby"), ExtResource("33_4hxfm")])
 upgradeCards = Array[Resource]([ExtResource("34_2a0bs"), ExtResource("35_yuu5t"), ExtResource("36_7igi8"), ExtResource("37_2dnkl"), ExtResource("38_t5pa6"), ExtResource("39_r2jxu"), ExtResource("40_x6auf"), ExtResource("41_43gxg"), ExtResource("42_geqqr"), ExtResource("43_ljpuf"), ExtResource("44_lxqxh"), ExtResource("45_jqpus"), ExtResource("46_j6gl4"), ExtResource("47_tru68"), ExtResource("48_7x0g7"), ExtResource("49_siscf"), ExtResource("50_np886")])
 examCards = Array[Resource]([ExtResource("51_l2g6p"), ExtResource("52_jfoww"), ExtResource("53_8yell"), ExtResource("54_qd5w6"), ExtResource("55_vdcfs"), ExtResource("56_yjl8b"), ExtResource("57_usjxk"), ExtResource("58_u3ugu"), ExtResource("59_slgm7"), ExtResource("60_d776q")])
 cardPrefab = ExtResource("61_ocmuj")
@@ -121,3 +121,8 @@ script = ExtResource("64_fq88x")
 playerCardAnchor = NodePath(".")
 cardDepth = 96
 selectOffset = 0
+
+[node name="TextureButton" type="TextureButton" parent="HUD"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0

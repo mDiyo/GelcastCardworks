@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://x764n637tvhc"]
+
+[ext_resource type="Script" path="res://Scripts/Card.cs" id="1_61k0f"]
+[ext_resource type="Texture2D" uid="uid://04mwl6v3lvwr" path="res://Textures/Cards/card_quailtyrod_magic.png" id="2_x8i8j"]
+
+[resource]
+script = ExtResource("1_61k0f")
+type = 0
+durability = 1
+power = 2
+style = 1
+slots = 0
+texture = ExtResource("2_x8i8j")
+identifier = "card.handle.quality.magic"

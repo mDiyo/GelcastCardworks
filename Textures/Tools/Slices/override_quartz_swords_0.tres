@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://b4qysve22n4d8"]
+
+[ext_resource type="Texture2D" uid="uid://nyan3wgfvujo" path="res://Textures/Tools/override_quartz_swords.png" id="1_k8mil"]
+
+[resource]
+atlas = ExtResource("1_k8mil")
+region = Rect2(0, 0, 32, 80)

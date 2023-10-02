@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dayylcc307uin"]
+
+[ext_resource type="Texture2D" uid="uid://7rr1iblh4lhv" path="res://Textures/Tools/cardworks_handles.png" id="1_phedm"]
+[ext_resource type="Script" path="res://Gelcast/Scripts/Util/SpritesheetSlicer.cs" id="2_k0v5a"]
+
+[node name="Atlas Slicer" type="Sprite2D"]
+texture = ExtResource("1_phedm")
+script = ExtResource("2_k0v5a")
+regionSize = Vector2i(32, 80)

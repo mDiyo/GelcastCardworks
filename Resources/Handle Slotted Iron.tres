@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_pw61k"]
 [ext_resource type="Texture2D" uid="uid://cgsvmpmh7cy7l" path="res://Textures/Tools/Slices/handle_slotted_iron.tres" id="1_u3xxj"]
-[ext_resource type="Texture2D" uid="uid://b2lflgp1sg0e3" path="res://Textures/Cards/card_slotrod_iron.png" id="2_jpi1n"]
+[ext_resource type="Texture2D" uid="uid://b2lflgp1sg0e3" path="res://Textures/Cards/Parts/card_slotrod_iron.png" id="2_jpi1n"]
 
 [resource]
 script = ExtResource("1_pw61k")
@@ -11,7 +11,7 @@ durability = 1
 power = 0
 style = 0
 slots = 2
-texture = ExtResource("2_jpi1n")
-itemSprite = ExtResource("1_u3xxj")
-itemOverrides = null
+overrides = null
 identifier = "card.handle.slotted.iron"
+inventorySprite = ExtResource("2_jpi1n")
+worldSprite = ExtResource("1_u3xxj")

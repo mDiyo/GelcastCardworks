@@ -1,17 +1,17 @@
 [gd_resource type="Resource" load_steps=4 format=3 uid="uid://d3tyev1rg16no"]
 
+[ext_resource type="Texture2D" uid="uid://btiqngyj45q2t" path="res://Textures/Cards/Upgrades/card_upgrade_powergem.png" id="1_7kqev"]
 [ext_resource type="Texture2D" uid="uid://d1l1pt8lj4wvb" path="res://Textures/Tools/Slices/upgrade_powergem.tres" id="1_fc7hy"]
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_vf7hr"]
-[ext_resource type="Texture2D" uid="uid://btiqngyj45q2t" path="res://Textures/Cards/card_upgrade_powergem.png" id="2_1b5jj"]
 
 [resource]
 script = ExtResource("1_vf7hr")
-type = 0
+type = 1
 durability = 1
 power = 0
 style = 0
 slots = 0
-texture = ExtResource("2_1b5jj")
-itemSprite = ExtResource("1_fc7hy")
-itemOverrides = null
+overrides = null
 identifier = "card.upgrade.powergem"
+inventorySprite = ExtResource("1_7kqev")
+worldSprite = ExtResource("1_fc7hy")

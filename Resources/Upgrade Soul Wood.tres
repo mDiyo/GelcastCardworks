@@ -1,8 +1,8 @@
 [gd_resource type="Resource" load_steps=4 format=3 uid="uid://badbjgarr0m8k"]
 
+[ext_resource type="Texture2D" uid="uid://ci3ph32x1fecb" path="res://Textures/Cards/Upgrades/card_upgrade_soul_wood.png" id="1_4fvha"]
 [ext_resource type="Script" path="res://Scripts/CardSoul.cs" id="1_6ogut"]
 [ext_resource type="Texture2D" uid="uid://dyj5py4sjarob" path="res://Textures/Tools/Slices/upgrade_soul_wood.tres" id="1_ohreg"]
-[ext_resource type="Texture2D" uid="uid://ci3ph32x1fecb" path="res://Textures/Cards/card_upgrade_woodsoul.png" id="2_231xg"]
 
 [resource]
 script = ExtResource("1_6ogut")
@@ -12,12 +12,12 @@ powerBoost = 0
 styleBoost = 0
 drawBoost = 1
 drawBase = 1
-type = 0
+type = 1
 durability = 0
 power = 0
 style = 0
 slots = 0
-texture = ExtResource("2_231xg")
-itemSprite = ExtResource("1_ohreg")
-itemOverrides = null
+overrides = null
 identifier = "card.upgrade.soul.wood"
+inventorySprite = ExtResource("1_4fvha")
+worldSprite = ExtResource("1_ohreg")

@@ -58,7 +58,7 @@ namespace Gelcast.Example.Card
 
 				cardHand[i].Position = new Vector2(cardOffset, 0);
 				cardHand[i].VisibilityLayer = (uint)(cardDepth + i);
-				GD.Print("Card " + cardHand[i].Position);
+				GD.Print(Name + " " + i + ": " + cardHand[i].Name);
 			}
 
 			cardHand[currentCard].MoveLocalY(-24);

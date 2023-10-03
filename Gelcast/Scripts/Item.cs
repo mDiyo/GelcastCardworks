@@ -3,31 +3,12 @@ using System;
 
 namespace Gelcast
 {
-	public partial class Item : Sprite2D
+	public partial class Item : Resource
 	{
 		[Export] public string identifier;
 		[Export] public Texture2D inventorySprite;
+		[Export] public Texture2D worldSprite;
 		[Export] public Attributes attribues;
-
-		// Called when the node enters the scene tree for the first time.
-		public override void _Ready()
-		{
-		}
-
-		// Called every frame. 'delta' is the elapsed time since the previous frame.
-		public override void _Process(double delta)
-		{
-		}
-
-		public virtual string GetName()
-		{
-			return Localizer.GetString(identifier + ".name");
-		}
-
-		public virtual string GetDescription()
-		{
-			return Localizer.GetString(identifier + ".description");
-		}
 
 		public virtual bool IsSameItem(Item other)
 		{
@@ -47,36 +28,22 @@ namespace Gelcast
 
 		public virtual Texture2D GetInventorySprite()
 		{
-			if (inventorySprite == null)
-				return Texture;
 			return inventorySprite;
+		}
+
+		public virtual Texture2D GetWorldSprite()
+		{
+			return worldSprite;
+		}
+
+		public virtual Vector2 GetWorldPosition()
+		{
+			return Vector2.Zero;
 		}
 
 		public virtual void SetInventorySprite(Texture2D sprite)
 		{
 			inventorySprite = sprite;
-		}
-
-		public virtual int GetValue() { return (int)GetMeta("Value"); }
-		public virtual int GetQuantity() { return (int)GetMeta("Quantity"); }
-		public virtual int GetQuantityMax() { return (int)GetMeta("Quantity-Max"); }
-		public virtual void SetQuantity(int amount) { SetMeta("Quantity", amount); }
-
-		public virtual int AddQuantity(int amount)
-		{
-			int quanta = GetQuantity();
-			int max = GetQuantityMax();
-			if (quanta + amount > max)
-			{
-				SetQuantity(max);
-				return max - quanta;
-			}
-			else
-			{
-				SetQuantity(quanta + amount);
-				return 0;
-			}
-
 		}
 	}
 }

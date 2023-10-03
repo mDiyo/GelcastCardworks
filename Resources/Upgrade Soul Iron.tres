@@ -1,8 +1,8 @@
 [gd_resource type="Resource" load_steps=4 format=3 uid="uid://cby0bdvxss1vw"]
 
 [ext_resource type="Texture2D" uid="uid://cyyj0k5prb8xw" path="res://Textures/Tools/Slices/upgrade_soul_iron.tres" id="1_8b4a4"]
+[ext_resource type="Texture2D" uid="uid://ca6ifoc8vequ2" path="res://Textures/Cards/Upgrades/card_upgrade_soul_iron.png" id="1_41pl2"]
 [ext_resource type="Script" path="res://Scripts/CardSoul.cs" id="1_jljsj"]
-[ext_resource type="Texture2D" uid="uid://ca6ifoc8vequ2" path="res://Textures/Cards/card_upgrade_ironsoul.png" id="2_aitsj"]
 
 [resource]
 script = ExtResource("1_jljsj")
@@ -12,12 +12,12 @@ powerBoost = 0
 styleBoost = 0
 drawBoost = 0
 drawBase = 0
-type = 0
+type = 1
 durability = 1
 power = 0
 style = 0
 slots = 0
-texture = ExtResource("2_aitsj")
-itemSprite = ExtResource("1_8b4a4")
-itemOverrides = null
+overrides = null
 identifier = "card.upgrade.soul.iron"
+inventorySprite = ExtResource("1_41pl2")
+worldSprite = ExtResource("1_8b4a4")

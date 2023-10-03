@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b4sjno46qeor8" path="res://Textures/Tools/Slices/handle_slotted_wood.tres" id="1_dbvtb"]
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_kmnib"]
-[ext_resource type="Texture2D" uid="uid://1020c2u4q1iq" path="res://Textures/Cards/card_slotrod_wood.png" id="2_sif53"]
+[ext_resource type="Texture2D" uid="uid://1020c2u4q1iq" path="res://Textures/Cards/Parts/card_slotrod_wood.png" id="2_sif53"]
 
 [resource]
 script = ExtResource("1_kmnib")
@@ -11,7 +11,7 @@ durability = 1
 power = 0
 style = 0
 slots = 2
-texture = ExtResource("2_sif53")
-itemSprite = ExtResource("1_dbvtb")
-itemOverrides = null
+overrides = null
 identifier = "card.handle.slotted.wood"
+inventorySprite = ExtResource("2_sif53")
+worldSprite = ExtResource("1_dbvtb")

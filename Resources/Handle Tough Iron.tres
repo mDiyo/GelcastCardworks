@@ -1,8 +1,8 @@
 [gd_resource type="Resource" load_steps=4 format=3 uid="uid://bjg1qp25510ch"]
 
+[ext_resource type="Texture2D" uid="uid://dr5we46tjowos" path="res://Textures/Cards/Parts/card_toughrod_iron.png" id="1_fdwv8"]
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_v6h22"]
 [ext_resource type="Texture2D" path="res://Textures/Tools/Slices/handle_tough_iron.tres" id="1_yvw3n"]
-[ext_resource type="Texture2D" uid="uid://cbmoevv1oyuyg" path="res://Textures/Cards/card_qualityrod_iron.png" id="2_3utm8"]
 
 [resource]
 script = ExtResource("1_v6h22")
@@ -11,7 +11,7 @@ durability = 2
 power = 1
 style = 1
 slots = 0
-texture = ExtResource("2_3utm8")
-itemSprite = ExtResource("1_yvw3n")
-itemOverrides = null
+overrides = null
 identifier = "card.handle.comfy.iron"
+inventorySprite = ExtResource("1_fdwv8")
+worldSprite = ExtResource("1_yvw3n")

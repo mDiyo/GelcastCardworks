@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" path="res://Textures/Tools/Slices/head_gem_slime.tres" id="1_fgid3"]
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_j4xc8"]
-[ext_resource type="Texture2D" uid="uid://cn6u87btt1muj" path="res://Textures/Cards/card_gemhead_slime.png" id="2_5cwdy"]
+[ext_resource type="Texture2D" uid="uid://cn6u87btt1muj" path="res://Textures/Cards/Parts/card_gemhead_slime.png" id="1_m82vg"]
 
 [resource]
 script = ExtResource("1_j4xc8")
@@ -11,7 +11,7 @@ durability = 2
 power = 0
 style = 4
 slots = 1
-texture = ExtResource("2_5cwdy")
-itemSprite = ExtResource("1_fgid3")
-itemOverrides = null
+upgradeOverrides = null
 identifier = "card.head.gem.slime"
+inventorySprite = ExtResource("1_m82vg")
+worldSprite = ExtResource("1_fgid3")

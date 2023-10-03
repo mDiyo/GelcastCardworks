@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_2s8et"]
 [ext_resource type="Texture2D" path="res://Textures/Tools/Slices/handle_tough_magic.tres" id="1_5d072"]
-[ext_resource type="Texture2D" uid="uid://bpum70ncfjgjf" path="res://Textures/Cards/card_toughrod_magic.png" id="2_y17c4"]
+[ext_resource type="Texture2D" uid="uid://bpum70ncfjgjf" path="res://Textures/Cards/Parts/card_toughrod_magic.png" id="2_y17c4"]
 
 [resource]
 script = ExtResource("1_2s8et")
@@ -11,7 +11,7 @@ durability = 3
 power = 1
 style = 0
 slots = 0
-texture = ExtResource("2_y17c4")
-itemSprite = ExtResource("1_5d072")
-itemOverrides = null
+overrides = null
 identifier = "card.handle.tough.magic"
+inventorySprite = ExtResource("2_y17c4")
+worldSprite = ExtResource("1_5d072")

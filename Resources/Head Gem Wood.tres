@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_1a3qi"]
 [ext_resource type="Texture2D" path="res://Textures/Tools/Slices/head_gem_wood.tres" id="1_l47x5"]
-[ext_resource type="Texture2D" uid="uid://cjr8ewsvpwufa" path="res://Textures/Cards/card_gemhead_wood.png" id="2_3ax7s"]
+[ext_resource type="Texture2D" uid="uid://cjr8ewsvpwufa" path="res://Textures/Cards/Parts/card_gemhead_wood.png" id="2_3ax7s"]
 
 [resource]
 script = ExtResource("1_1a3qi")

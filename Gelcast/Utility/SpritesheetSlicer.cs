@@ -16,7 +16,7 @@ public partial class SpritesheetSlicer : Sprite2D
             {
                 sliceSheet = false;
 
-                GD.Print("Doin' a thing");
+                GD.Print("Creating AtlasTextures for " + Texture);
                 sliceMe = Texture;
                 int count = 0;
                 for (int y = 0; y < sliceMe.GetHeight(); y += regionSize.Y)
@@ -31,7 +31,7 @@ public partial class SpritesheetSlicer : Sprite2D
                         path = path.Replace(substring, "");
                         string namestring = substring.Substring(substring.LastIndexOf('.'));
                         namestring = substring.Replace(namestring, "");
-                        GD.Print("Location: " + path + "/Slices" + namestring + "_" + count + ".tres");
+                        GD.Print("Slice : " + path + "/Slices" + namestring + "_" + count + ".tres");
                         ResourceSaver.Save(at, path + "/Slices/" + namestring + "_" + count + ".tres");
 
                         count++;

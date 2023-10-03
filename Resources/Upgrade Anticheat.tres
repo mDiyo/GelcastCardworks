@@ -1,16 +1,17 @@
 [gd_resource type="Resource" load_steps=3 format=3 uid="uid://b7rj65hobepyb"]
 
 [ext_resource type="Script" path="res://Scripts/CardMetaManipulation.cs" id="1_0gsf0"]
-[ext_resource type="Texture2D" uid="uid://c6fvf6t1fkp1j" path="res://Textures/Cards/card_upgrade_workshop.png" id="2_u3qsu"]
+[ext_resource type="Texture2D" uid="uid://bj13cdjiitsyk" path="res://Textures/Cards/Upgrades/card_upgrade_anticheat.png" id="1_8xmxy"]
 
 [resource]
 script = ExtResource("1_0gsf0")
 examAmount = 0
 moraleRecovery = 2
-cardClass = 1
+type = 1
 durability = 0
 power = 0
 style = 0
 slots = 0
-texture = ExtResource("2_u3qsu")
+overrides = null
 identifier = "card.upgrade.workshop"
+inventorySprite = ExtResource("1_8xmxy")

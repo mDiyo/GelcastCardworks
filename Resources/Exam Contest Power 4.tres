@@ -1,7 +1,7 @@
 [gd_resource type="Resource" load_steps=3 format=3 uid="uid://cwqusa10ct0y3"]
 
 [ext_resource type="Script" path="res://Scripts/Exam.cs" id="1_f38cg"]
-[ext_resource type="Texture2D" uid="uid://c5xlue8eo0s85" path="res://Textures/Cards/card_contest_power4.png" id="2_5ecbw"]
+[ext_resource type="Texture2D" uid="uid://c5xlue8eo0s85" path="res://Textures/Cards/Exams/card_contest_power4.png" id="2_5ecbw"]
 
 [resource]
 script = ExtResource("1_f38cg")

@@ -6,4 +6,3 @@
 [node name="Card" type="Sprite2D"]
 texture = ExtResource("1_23wfl")
 script = ExtResource("2_nib1h")
-identifier = "card.error"

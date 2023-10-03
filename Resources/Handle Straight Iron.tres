@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dmor4w24lsyq2" path="res://Textures/Tools/Slices/handle_straight_iron.tres" id="1_ea0ov"]
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_epjkq"]
-[ext_resource type="Texture2D" uid="uid://cxf6wy6gou07c" path="res://Textures/Cards/card_bladehead_iron.png" id="2_sobtt"]
+[ext_resource type="Texture2D" uid="uid://cnduf6in07mgq" path="res://Textures/Cards/Parts/card_straightrod_iron.png" id="1_u8sk6"]
 
 [resource]
 script = ExtResource("1_epjkq")
@@ -11,7 +11,7 @@ durability = 3
 power = 3
 style = 0
 slots = 1
-texture = ExtResource("2_sobtt")
-itemSprite = ExtResource("1_ea0ov")
-itemOverrides = null
+overrides = null
 identifier = "card.head.blade.iron"
+inventorySprite = ExtResource("1_u8sk6")
+worldSprite = ExtResource("1_ea0ov")

@@ -1,8 +1,8 @@
 [gd_resource type="Resource" load_steps=4 format=3 uid="uid://c7pnldr7xnc3u"]
 
 [ext_resource type="Texture2D" uid="uid://oddqbgq5vcfr" path="res://Textures/Tools/Slices/upgrade_vileshroom.tres" id="1_fbmsw"]
+[ext_resource type="Texture2D" uid="uid://ciio0cs1wd01q" path="res://Textures/Cards/Upgrades/card_upgrade_vileshroom.png" id="1_g0coq"]
 [ext_resource type="Script" path="res://Scripts/CardDuringExam.cs" id="1_jquus"]
-[ext_resource type="Texture2D" uid="uid://cj2tqrqlkkjqp" path="res://Textures/Cards/card_upgrade_necroshroom.png" id="2_4m4c7"]
 
 [resource]
 script = ExtResource("1_jquus")
@@ -11,12 +11,12 @@ durabilityArmor = 0
 powerBoost = 0
 styleBoost = 0
 durabilityTheft = 1
-type = 0
+type = 1
 durability = 0
 power = 0
 style = 0
 slots = 0
-texture = ExtResource("2_4m4c7")
-itemSprite = ExtResource("1_fbmsw")
-itemOverrides = null
+overrides = null
 identifier = "card.upgrade.ribbon"
+inventorySprite = ExtResource("1_g0coq")
+worldSprite = ExtResource("1_fbmsw")

@@ -1,14 +1,17 @@
-[gd_resource type="Resource" load_steps=3 format=3 uid="uid://bbnd7w2oc8s5m"]
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://bbnd7w2oc8s5m"]
 
+[ext_resource type="Texture2D" uid="uid://b0582c6kh05t5" path="res://Textures/Cards/Upgrades/card_upgrade_binding.png" id="1_stmsf"]
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_u8lht"]
-[ext_resource type="Texture2D" uid="uid://b0582c6kh05t5" path="res://Textures/Cards/card_upgrade_binding.png" id="2_2n42b"]
+[ext_resource type="Texture2D" uid="uid://cvhoxvn2eht1o" path="res://Textures/Tools/Slices/upgrade_binding.tres" id="3_cql1b"]
 
 [resource]
 script = ExtResource("1_u8lht")
-cardClass = 1
+type = 1
 durability = 1
 power = 0
 style = 0
 slots = 0
-texture = ExtResource("2_2n42b")
+overrides = null
 identifier = "card.upgrade.binding"
+inventorySprite = ExtResource("1_stmsf")
+worldSprite = ExtResource("3_cql1b")

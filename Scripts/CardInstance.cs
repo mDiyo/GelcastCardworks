@@ -3,7 +3,7 @@ using System;
 
 namespace Gelcast.Example.Card
 {
-	public partial class CardInstance : Item
+	public partial class CardInstance : ItemInstance
 	{
 		public CardClass type;
 		private Card cardData;
@@ -12,9 +12,10 @@ namespace Gelcast.Example.Card
 
 		public void Init(Card data)
 		{
+			base.Init(data);
 			cardData = data;
 			type = data.type;
-			Texture = data.texture;
+			Texture = data.GetInventorySprite();
 			Name = data.identifier + ".name";
 			description = data.identifier + ".description";
 		}

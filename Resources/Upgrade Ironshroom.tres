@@ -1,8 +1,8 @@
 [gd_resource type="Resource" load_steps=4 format=3 uid="uid://0j842pmcie1u"]
 
+[ext_resource type="Texture2D" uid="uid://b7kmyaiae0606" path="res://Textures/Cards/Upgrades/card_upgrade_ironshroom.png" id="1_0ox3s"]
 [ext_resource type="Script" path="res://Scripts/CardDuringExam.cs" id="1_m1so1"]
 [ext_resource type="Texture2D" uid="uid://cueowcfjqo7pi" path="res://Textures/Tools/Slices/upgrade_ironshroom.tres" id="1_voob8"]
-[ext_resource type="Texture2D" uid="uid://b7kmyaiae0606" path="res://Textures/Cards/card_upgrade_ironshroom.png" id="2_gm6ha"]
 
 [resource]
 script = ExtResource("1_m1so1")
@@ -11,12 +11,12 @@ durabilityArmor = 1
 powerBoost = 0
 styleBoost = 0
 durabilityTheft = 0
-type = 0
+type = 1
 durability = 0
 power = 0
 style = 0
 slots = 0
-texture = ExtResource("2_gm6ha")
-itemSprite = ExtResource("1_voob8")
-itemOverrides = null
+overrides = null
 identifier = "card.upgrade.ironshroom"
+inventorySprite = ExtResource("1_0ox3s")
+worldSprite = ExtResource("1_voob8")

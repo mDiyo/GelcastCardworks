@@ -1,0 +1,8 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://rn4nqhco0gbf"]
+
+[ext_resource type="Script" path="res://Scripts/UpgradeOverride.cs" id="1_gsjsm"]
+
+[resource]
+script = ExtResource("1_gsjsm")
+materialOverride = ""
+classOverride = ""

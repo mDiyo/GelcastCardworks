@@ -1,8 +1,8 @@
 [gd_resource type="Resource" load_steps=4 format=3 uid="uid://bmjgivd6y21b0"]
 
 [ext_resource type="Script" path="res://Scripts/CardDuringExam.cs" id="1_4k8or"]
+[ext_resource type="Texture2D" uid="uid://3ndp41n01bel" path="res://Textures/Cards/Upgrades/card_upgrade_ruby.png" id="1_6vp1e"]
 [ext_resource type="Texture2D" uid="uid://bfcw06tj1j7yk" path="res://Textures/Tools/Slices/upgrade_ruby.tres" id="1_u81ys"]
-[ext_resource type="Texture2D" uid="uid://3ndp41n01bel" path="res://Textures/Cards/card_upgrade_ruby.png" id="2_fh1qy"]
 
 [resource]
 script = ExtResource("1_4k8or")
@@ -11,12 +11,12 @@ durabilityArmor = 0
 powerBoost = 2
 styleBoost = 0
 durabilityTheft = 0
-type = 0
+type = 1
 durability = 0
 power = 0
 style = 0
 slots = 0
-texture = ExtResource("2_fh1qy")
-itemSprite = ExtResource("1_u81ys")
-itemOverrides = null
+overrides = null
 identifier = "card.upgrade.ribbon"
+inventorySprite = ExtResource("1_6vp1e")
+worldSprite = ExtResource("1_u81ys")

@@ -1,8 +1,8 @@
 [gd_resource type="Resource" load_steps=4 format=3 uid="uid://bakuvop7lwe0g"]
 
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_0xuiy"]
+[ext_resource type="Texture2D" uid="uid://cqypq5povras4" path="res://Textures/Cards/Parts/card_gemhead_iron.png" id="1_5305u"]
 [ext_resource type="Texture2D" path="res://Textures/Tools/Slices/head_gem_iron.tres" id="1_ayly2"]
-[ext_resource type="Texture2D" uid="uid://cqypq5povras4" path="res://Textures/Cards/card_gemhead_iron.png" id="2_8furi"]
 
 [resource]
 script = ExtResource("1_0xuiy")
@@ -11,7 +11,7 @@ durability = 3
 power = 0
 style = 3
 slots = 1
-texture = ExtResource("2_8furi")
-itemSprite = ExtResource("1_ayly2")
-itemOverrides = null
+upgradeOverrides = null
 identifier = "card.head.gem.iron"
+inventorySprite = ExtResource("1_5305u")
+worldSprite = ExtResource("1_ayly2")

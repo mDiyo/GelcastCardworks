@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_4gf64"]
 [ext_resource type="Texture2D" uid="uid://cp7g1fsx5ddnb" path="res://Textures/Tools/Slices/handle_straight_magic.tres" id="1_54rdx"]
-[ext_resource type="Texture2D" uid="uid://cpe88k0de286b" path="res://Textures/Cards/card_straightrod_magic.png" id="2_1a1lb"]
+[ext_resource type="Texture2D" uid="uid://cpe88k0de286b" path="res://Textures/Cards/Parts/card_straightrod_magic.png" id="2_1a1lb"]
 
 [resource]
 script = ExtResource("1_4gf64")
@@ -11,7 +11,7 @@ durability = 2
 power = 1
 style = 0
 slots = 1
-texture = ExtResource("2_1a1lb")
-itemSprite = ExtResource("1_54rdx")
-itemOverrides = null
+overrides = null
 identifier = "card.handle.straight.magic"
+inventorySprite = ExtResource("2_1a1lb")
+worldSprite = ExtResource("1_54rdx")

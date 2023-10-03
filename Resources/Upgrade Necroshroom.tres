@@ -1,8 +1,8 @@
 [gd_resource type="Resource" load_steps=4 format=3 uid="uid://cy5m54ajrmg8y"]
 
+[ext_resource type="Texture2D" uid="uid://cj2tqrqlkkjqp" path="res://Textures/Cards/Upgrades/card_upgrade_necroshroom.png" id="1_hcme8"]
 [ext_resource type="Script" path="res://Scripts/CardDuringExam.cs" id="1_n1v8o"]
 [ext_resource type="Texture2D" uid="uid://btwy7bxrxxrys" path="res://Textures/Tools/Slices/upgrade_necroshroom.tres" id="1_p61qp"]
-[ext_resource type="Texture2D" uid="uid://cj2tqrqlkkjqp" path="res://Textures/Cards/card_upgrade_necroshroom.png" id="2_k40rw"]
 
 [resource]
 script = ExtResource("1_n1v8o")
@@ -11,12 +11,12 @@ durabilityArmor = 0
 powerBoost = 0
 styleBoost = 0
 durabilityTheft = 1
-type = 0
+type = 1
 durability = 0
 power = 0
 style = 0
 slots = 0
-texture = ExtResource("2_k40rw")
-itemSprite = ExtResource("1_p61qp")
-itemOverrides = null
+overrides = null
 identifier = "card.upgrade.necroshroom"
+inventorySprite = ExtResource("1_hcme8")
+worldSprite = ExtResource("1_p61qp")

@@ -1,8 +1,8 @@
 [gd_resource type="Resource" load_steps=4 format=3 uid="uid://di8uktu6hpxxy"]
 
 [ext_resource type="Texture2D" uid="uid://coh8oyjqqejw3" path="res://Textures/Tools/Slices/upgrade_soul_magic.tres" id="1_1hbh8"]
+[ext_resource type="Texture2D" uid="uid://cwdlhbtnt3btk" path="res://Textures/Cards/Upgrades/card_upgrade_soul_magic.png" id="1_3y04f"]
 [ext_resource type="Script" path="res://Scripts/CardSoul.cs" id="1_sf4ww"]
-[ext_resource type="Texture2D" uid="uid://cwdlhbtnt3btk" path="res://Textures/Cards/card_upgrade_magicsoul.png" id="2_vtr8q"]
 
 [resource]
 script = ExtResource("1_sf4ww")
@@ -12,12 +12,12 @@ powerBoost = 1
 styleBoost = 0
 drawBoost = 0
 drawBase = 0
-type = 0
+type = 1
 durability = 0
 power = 1
 style = 0
 slots = 0
-texture = ExtResource("2_vtr8q")
-itemSprite = ExtResource("1_1hbh8")
-itemOverrides = null
+overrides = null
 identifier = "card.upgrade.soul.magic"
+inventorySprite = ExtResource("1_3y04f")
+worldSprite = ExtResource("1_1hbh8")

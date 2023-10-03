@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/CardDuringExam.cs" id="1_gubww"]
 [ext_resource type="Texture2D" uid="uid://ccg8kedu1rdvs" path="res://Textures/Tools/Slices/upgrade_lavatank.tres" id="1_nmavn"]
-[ext_resource type="Texture2D" uid="uid://dxr0yituxmjut" path="res://Textures/Cards/card_upgrade_lavalamp.png" id="2_sievi"]
+[ext_resource type="Texture2D" uid="uid://dxr0yituxmjut" path="res://Textures/Cards/Upgrades/card_upgrade_lavalamp.png" id="1_yhtil"]
 
 [resource]
 script = ExtResource("1_gubww")
@@ -11,12 +11,12 @@ durabilityArmor = 0
 powerBoost = 2
 styleBoost = 0
 durabilityTheft = 0
-type = 0
+type = 1
 durability = 0
 power = 0
 style = 0
 slots = 0
-texture = ExtResource("2_sievi")
-itemSprite = ExtResource("1_nmavn")
-itemOverrides = null
+overrides = null
 identifier = "card.upgrade.lavalamp"
+inventorySprite = ExtResource("1_yhtil")
+worldSprite = ExtResource("1_nmavn")

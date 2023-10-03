@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://drgg8hu0xmep1"]
+
+[ext_resource type="Texture2D" uid="uid://cpklxf0dhi36u" path="res://Textures/Tools/Debug/cardworks_handles_error.png" id="1_1uif1"]
+
+[resource]
+atlas = ExtResource("1_1uif1")
+region = Rect2(32, 0, 16, 80)

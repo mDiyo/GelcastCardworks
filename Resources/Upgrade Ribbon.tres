@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/CardDuringExam.cs" id="1_3qkk4"]
 [ext_resource type="Texture2D" uid="uid://laqn3vcewhwx" path="res://Textures/Tools/Slices/upgrade_ribbon.tres" id="1_g7kyv"]
-[ext_resource type="Texture2D" uid="uid://daj4qspybd4ia" path="res://Textures/Cards/card_upgrade_ribbon.png" id="2_wuvd8"]
+[ext_resource type="Texture2D" uid="uid://daj4qspybd4ia" path="res://Textures/Cards/Upgrades/card_upgrade_ribbon.png" id="1_leekd"]
 
 [resource]
 script = ExtResource("1_3qkk4")
@@ -11,12 +11,12 @@ durabilityArmor = 0
 powerBoost = 0
 styleBoost = 2
 durabilityTheft = 0
-type = 0
+type = 1
 durability = 0
 power = 0
 style = 0
 slots = 0
-texture = ExtResource("2_wuvd8")
-itemSprite = ExtResource("1_g7kyv")
-itemOverrides = null
+overrides = null
 identifier = "card.upgrade.ribbon"
+inventorySprite = ExtResource("1_leekd")
+worldSprite = ExtResource("1_g7kyv")

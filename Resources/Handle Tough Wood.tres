@@ -1,8 +1,9 @@
-[gd_resource type="Resource" load_steps=4 format=3 uid="uid://dyaltlj8tfe63"]
+[gd_resource type="Resource" load_steps=5 format=3 uid="uid://dyaltlj8tfe63"]
 
 [ext_resource type="Texture2D" path="res://Textures/Tools/Slices/handle_tough_wood.tres" id="1_e0sh8"]
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_rdbwl"]
 [ext_resource type="Texture2D" uid="uid://8ufrg3qr7f75" path="res://Textures/Cards/Parts/card_toughrod_wood.png" id="2_2w8vx"]
+[ext_resource type="PackedScene" uid="uid://c72ale7od82sg" path="res://Prefabs/Handle - Tough.tscn" id="2_aw3us"]
 
 [resource]
 script = ExtResource("1_rdbwl")
@@ -11,7 +12,8 @@ durability = 3
 power = 0
 style = 0
 slots = 1
-overrides = null
-identifier = "card.handle.tough.iron"
+upgradeOverrides = null
+identifier = "card.handle.tough.wood"
 inventorySprite = ExtResource("2_2w8vx")
 worldSprite = ExtResource("1_e0sh8")
+model = ExtResource("2_aw3us")

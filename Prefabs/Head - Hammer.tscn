@@ -1,19 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://baw7oitb6yoru"]
+[gd_scene load_steps=3 format=3 uid="uid://bqicb7wccat3r"]
 
 [ext_resource type="Texture2D" uid="uid://dhd0r0kw7hcna" path="res://Textures/Tools/Debug/Slices/head_hammer_error.tres" id="1_0kail"]
 [ext_resource type="Script" path="res://Scripts/ToolPart.cs" id="2_3f3rk"]
 
-[node name="Head" type="Sprite2D" node_paths=PackedStringArray("singleSlotAttach", "multiSlotAttach")]
+[node name="Head - Hammer" type="Sprite2D" node_paths=PackedStringArray("singleSlotAttach", "multiSlotAttach")]
 texture = ExtResource("1_0kail")
 script = ExtResource("2_3f3rk")
 singleSlotAttach = NodePath("slot1")
 multiSlotAttach = [NodePath("slot2"), NodePath("slot3"), NodePath("slot1")]
 
-[node name="slot1" type="Node2D" parent="." node_paths=PackedStringArray("singleSlotAttach", "multiSlotAttach")]
+[node name="slot1" type="Node2D" parent="." node_paths=PackedStringArray("multiSlotAttach")]
 position = Vector2(0, -6)
 script = ExtResource("2_3f3rk")
-singleSlotAttach = NodePath("")
-multiSlotAttach = [NodePath(""), NodePath("")]
+multiSlotAttach = [null, null]
 
 [node name="slot2" type="Node2D" parent="."]
 position = Vector2(-6, -10)

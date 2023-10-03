@@ -1,19 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://ccotoxl2j044b"]
+[gd_scene load_steps=3 format=3 uid="uid://cbb4x7e0ggyr0"]
 
 [ext_resource type="Texture2D" uid="uid://cx0486hevoubg" path="res://Textures/Tools/Debug/Slices/head_gem_error.tres" id="1_83x8r"]
 [ext_resource type="Script" path="res://Scripts/ToolPart.cs" id="2_6foe3"]
 
-[node name="Head" type="Sprite2D" node_paths=PackedStringArray("singleSlotAttach", "multiSlotAttach")]
+[node name="Head - Gem" type="Sprite2D" node_paths=PackedStringArray("singleSlotAttach", "multiSlotAttach")]
 texture = ExtResource("1_83x8r")
 script = ExtResource("2_6foe3")
 singleSlotAttach = NodePath("slot1")
 multiSlotAttach = [NodePath("slot1"), NodePath("slot2")]
 
-[node name="slot1" type="Node2D" parent="." node_paths=PackedStringArray("singleSlotAttach", "multiSlotAttach")]
+[node name="slot1" type="Node2D" parent="."]
 position = Vector2(-7, -7)
-script = ExtResource("2_6foe3")
-singleSlotAttach = NodePath("")
-multiSlotAttach = [NodePath(""), NodePath("")]
 
 [node name="slot2" type="Node2D" parent="."]
 position = Vector2(7, 7)

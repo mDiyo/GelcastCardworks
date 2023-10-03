@@ -1,22 +1,22 @@
-[gd_scene load_steps=3 format=3 uid="uid://bk81ttoty7et1"]
+[gd_scene load_steps=3 format=3 uid="uid://stg05polroaw"]
 
 [ext_resource type="Texture2D" uid="uid://b2ob0k86efd2f" path="res://Textures/Tools/Debug/Slices/handle_quality_error.tres" id="1_2n1ic"]
 [ext_resource type="Script" path="res://Scripts/ToolPart.cs" id="2_j80ia"]
 
-[node name="Handle" type="Sprite2D" node_paths=PackedStringArray("singleSlotAttach", "multiSlotAttach", "highAttachPoint", "lowAttachPoint")]
+[node name="Handle - Quality" type="Sprite2D" node_paths=PackedStringArray("singleSlotAttach", "multiSlotAttach", "highAttachPoint", "lowAttachPoint")]
+position = Vector2(0, -18)
 texture = ExtResource("1_2n1ic")
-offset = Vector2(0, -18)
 script = ExtResource("2_j80ia")
 singleSlotAttach = NodePath("slot1")
-multiSlotAttach = [NodePath("slot1")]
+multiSlotAttach = []
 highAttachPoint = NodePath("attach_high")
 lowAttachPoint = NodePath("attach_low")
 
 [node name="attach_high" type="Node2D" parent="."]
-position = Vector2(0, -25)
+position = Vector2(0, -7)
 
 [node name="attach_low" type="Node2D" parent="."]
-position = Vector2(0, -9)
+position = Vector2(0, 9)
 
 [node name="slot1" type="Node2D" parent="."]
-position = Vector2(0, -13)
+position = Vector2(0, 6)

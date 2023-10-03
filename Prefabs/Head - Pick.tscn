@@ -1,19 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://k0ggejt6wfbn"]
+[gd_scene load_steps=3 format=3 uid="uid://c8naacqrfjrw7"]
 
 [ext_resource type="Texture2D" uid="uid://pv7sxswvbnh6" path="res://Textures/Tools/Debug/Slices/head_pick_error.tres" id="1_0bxl6"]
 [ext_resource type="Script" path="res://Scripts/ToolPart.cs" id="2_tdfok"]
 
-[node name="Head" type="Sprite2D" node_paths=PackedStringArray("singleSlotAttach", "multiSlotAttach")]
+[node name="Head - Pick" type="Sprite2D" node_paths=PackedStringArray("singleSlotAttach", "multiSlotAttach")]
 texture = ExtResource("1_0bxl6")
 script = ExtResource("2_tdfok")
 singleSlotAttach = NodePath("slot1")
 multiSlotAttach = [NodePath("slot1"), NodePath("slot2")]
 
-[node name="slot1" type="Node2D" parent="." node_paths=PackedStringArray("singleSlotAttach", "multiSlotAttach")]
+[node name="slot1" type="Node2D" parent="."]
 position = Vector2(-8, -2)
-script = ExtResource("2_tdfok")
-singleSlotAttach = NodePath("")
-multiSlotAttach = [NodePath(""), NodePath("")]
 
 [node name="slot2" type="Node2D" parent="."]
 position = Vector2(9, -2)

@@ -8,7 +8,7 @@ namespace Gelcast.Example.Card
 	public enum Player { Self, Opponent, Field }
 	public partial class GameFlow : Node2D
 	{
-		private CardGame game;
+		private static CardGame game;
 		private System.Random rng = new System.Random(5);
 
 		[Export] public Card[] headCards;
@@ -16,6 +16,12 @@ namespace Gelcast.Example.Card
 		[Export] public Card[] upgradeCards;
 		[Export] public Exam[] examCards;
 		[Export] public PackedScene cardPrefab;
+		[Export] public PackedScene toolPrefab;
+		[Export] public PackedScene upgradePrefab;
+
+		public static PackedScene CardPrefab;
+		public static PackedScene ToolPrefab;
+		public static PackedScene UpgradePrefab;
 
 		private Deck partDeck;
 		private Deck upgradeDeck;
@@ -29,14 +35,25 @@ namespace Gelcast.Example.Card
 
 		public void Init(CardGame game)
 		{
-			this.game = game;
+			GameFlow.game = game;
+			GameFlow.CardPrefab = cardPrefab;
+			GameFlow.ToolPrefab = toolPrefab;
+			GameFlow.UpgradePrefab = upgradePrefab;
+
 			partDeck = new Deck(game.playerHUD);
 			upgradeDeck = new Deck(game.playerHUD);
 			partDeckOpponent = new Deck(game.opponentHUD);
 			upgradeDeckOpponent = new Deck(game.opponentHUD);
 			examDeck = new Deck(game.fieldHUD);
+
 			BuildDecks();
 			DrawCards(4, 4, 4, 4, 2);
+
+			Item[] testHand1 = new Item[] { hand[0].item, hand[1].item, hand[4].item };
+			Item[] testHand2 = new Item[] { handOpponent[0].item, handOpponent[1].item, handOpponent[4].item };
+
+			test test = new test();
+			test.Test(this, testHand1, testHand2);
 		}
 
 		void BuildDecks()

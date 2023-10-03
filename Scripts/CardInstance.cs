@@ -6,14 +6,13 @@ namespace Gelcast.Example.Card
 	public partial class CardInstance : ItemInstance
 	{
 		public CardClass type;
-		private Card cardData;
 		private Exam examData;
 		public string description;
 
 		public void Init(Card data)
 		{
 			base.Init(data);
-			cardData = data;
+			item = data;
 			type = data.type;
 			Texture = data.GetInventorySprite();
 			Name = data.identifier + ".name";

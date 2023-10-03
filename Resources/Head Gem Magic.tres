@@ -1,8 +1,9 @@
-[gd_resource type="Resource" load_steps=4 format=3 uid="uid://cytf6q0r783lo"]
+[gd_resource type="Resource" load_steps=5 format=3 uid="uid://cytf6q0r783lo"]
 
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_f0i4b"]
 [ext_resource type="Texture2D" path="res://Textures/Tools/Slices/head_gem_magic.tres" id="1_wxgsl"]
 [ext_resource type="Texture2D" uid="uid://cb0oi5f3n3uvj" path="res://Textures/Cards/Parts/card_gemhead_magic.png" id="2_7wiak"]
+[ext_resource type="PackedScene" uid="uid://cbb4x7e0ggyr0" path="res://Prefabs/Head - Gem.tscn" id="2_pqktl"]
 
 [resource]
 script = ExtResource("1_f0i4b")
@@ -11,7 +12,8 @@ durability = 2
 power = 1
 style = 3
 slots = 1
-texture = ExtResource("2_7wiak")
-itemSprite = ExtResource("1_wxgsl")
-itemOverrides = null
+upgradeOverrides = null
 identifier = "card.head.gem.magic"
+inventorySprite = ExtResource("2_7wiak")
+worldSprite = ExtResource("1_wxgsl")
+model = ExtResource("2_pqktl")

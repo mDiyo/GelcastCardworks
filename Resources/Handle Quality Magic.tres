@@ -1,8 +1,9 @@
-[gd_resource type="Resource" load_steps=4 format=3 uid="uid://x764n637tvhc"]
+[gd_resource type="Resource" load_steps=5 format=3 uid="uid://x764n637tvhc"]
 
 [ext_resource type="Texture2D" path="res://Textures/Tools/Slices/handle_quality_magic.tres" id="1_6fqb7"]
 [ext_resource type="Texture2D" uid="uid://04mwl6v3lvwr" path="res://Textures/Cards/Parts/card_qualityrod_magic.png" id="1_28uro"]
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_61k0f"]
+[ext_resource type="PackedScene" uid="uid://stg05polroaw" path="res://Prefabs/Handle - Quality.tscn" id="2_lonhu"]
 
 [resource]
 script = ExtResource("1_61k0f")
@@ -11,7 +12,8 @@ durability = 1
 power = 2
 style = 1
 slots = 0
-overrides = null
+upgradeOverrides = null
 identifier = "card.handle.quality.magic"
 inventorySprite = ExtResource("1_28uro")
 worldSprite = ExtResource("1_6fqb7")
+model = ExtResource("2_lonhu")

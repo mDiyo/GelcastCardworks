@@ -1,22 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://qa67ok28sqqs"]
+[gd_scene load_steps=3 format=3 uid="uid://b1n0ce5yqc7l6"]
 
 [ext_resource type="Texture2D" uid="uid://bttsexn8eabv6" path="res://Textures/Tools/Debug/Slices/head_blade_error.tres" id="1_eg3eo"]
 [ext_resource type="Script" path="res://Scripts/ToolPart.cs" id="2_k5wtk"]
 
-[node name="Head" type="Sprite2D" node_paths=PackedStringArray("singleSlotAttach", "multiSlotAttach", "highAttachPoint", "lowAttachPoint")]
+[node name="Head - Blade" type="Sprite2D" node_paths=PackedStringArray("singleSlotAttach", "multiSlotAttach")]
 texture = ExtResource("1_eg3eo")
 offset = Vector2(0, -19)
 script = ExtResource("2_k5wtk")
 singleSlotAttach = NodePath("slot1")
-multiSlotAttach = []
-highAttachPoint = NodePath("")
-lowAttachPoint = NodePath("")
+multiSlotAttach = [NodePath("slot2"), NodePath("slot1")]
 
-[node name="slot1" type="Node2D" parent="." node_paths=PackedStringArray("singleSlotAttach", "multiSlotAttach")]
+[node name="slot1" type="Node2D" parent="."]
 position = Vector2(0, -18)
-script = ExtResource("2_k5wtk")
-singleSlotAttach = NodePath(".")
-multiSlotAttach = [NodePath("../slot2"), NodePath(".")]
 
 [node name="slot2" type="Node2D" parent="."]
 position = Vector2(0, -9)

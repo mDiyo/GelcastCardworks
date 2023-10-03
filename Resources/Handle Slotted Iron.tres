@@ -1,7 +1,8 @@
-[gd_resource type="Resource" load_steps=4 format=3 uid="uid://dhfiwfxfsbpa8"]
+[gd_resource type="Resource" load_steps=5 format=3 uid="uid://dhfiwfxfsbpa8"]
 
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_pw61k"]
 [ext_resource type="Texture2D" uid="uid://cgsvmpmh7cy7l" path="res://Textures/Tools/Slices/handle_slotted_iron.tres" id="1_u3xxj"]
+[ext_resource type="PackedScene" uid="uid://ch7whn32vnvpe" path="res://Prefabs/Handle - Slotted.tscn" id="2_ham8i"]
 [ext_resource type="Texture2D" uid="uid://b2lflgp1sg0e3" path="res://Textures/Cards/Parts/card_slotrod_iron.png" id="2_jpi1n"]
 
 [resource]
@@ -11,7 +12,8 @@ durability = 1
 power = 0
 style = 0
 slots = 2
-overrides = null
+upgradeOverrides = null
 identifier = "card.handle.slotted.iron"
 inventorySprite = ExtResource("2_jpi1n")
 worldSprite = ExtResource("1_u3xxj")
+model = ExtResource("2_ham8i")

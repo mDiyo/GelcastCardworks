@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://c83e8u5ep7ppc"]
+
+[ext_resource type="Texture2D" uid="uid://boeb3bpab4dev" path="res://Textures/Tools/Debug/upgrade_error.png" id="1_dbayd"]
+[ext_resource type="Script" path="res://Gelcast/Scripts/ItemInstance.cs" id="2_i4n1f"]
+
+[node name="Upgrade" type="Sprite2D"]
+texture = ExtResource("1_dbayd")
+script = ExtResource("2_i4n1f")

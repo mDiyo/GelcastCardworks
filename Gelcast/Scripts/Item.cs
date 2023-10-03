@@ -8,6 +8,7 @@ namespace Gelcast
 		[Export] public string identifier;
 		[Export] public Texture2D inventorySprite;
 		[Export] public Texture2D worldSprite;
+		[Export] public PackedScene model;
 		[Export] public Attributes attribues;
 
 		public virtual bool IsSameItem(Item other)

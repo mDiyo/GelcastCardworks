@@ -57,12 +57,12 @@ namespace Gelcast.Example.Card
 					cardOffset = -cardOffset * (cardHand.Length - 2) + cardOffset * 2 * i;
 
 				cardHand[i].Position = new Vector2(cardOffset, 0);
-				cardHand[i].VisibilityLayer = (uint)(cardDepth + i);
+				cardHand[i].ZIndex = cardDepth + i;
 				GD.Print(Name + " " + i + ": " + cardHand[i].Name);
 			}
 
-			cardHand[currentCard].MoveLocalY(-24);
-			cardHand[currentCard].VisibilityLayer = (uint)(cardDepth + cardHand.Length);
+			cardHand[currentCard].MoveLocalY(selectOffset);
+			cardHand[currentCard].ZIndex = cardDepth + cardHand.Length;
 		}
 
 		public void CycleCard(bool forward)

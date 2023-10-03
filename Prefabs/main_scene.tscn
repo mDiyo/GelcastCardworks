@@ -1,4 +1,4 @@
-[gd_scene load_steps=65 format=3 uid="uid://bhngchx1hrtp7"]
+[gd_scene load_steps=68 format=3 uid="uid://bhngchx1hrtp7"]
 
 [ext_resource type="Script" path="res://Scripts/CardGame.cs" id="1_4elw1"]
 [ext_resource type="Script" path="res://Scripts/GameFlow.cs" id="1_myaw3"]
@@ -62,8 +62,11 @@
 [ext_resource type="Resource" uid="uid://jbr220ptqyw1" path="res://Resources/Exam Duel Style 1.tres" id="59_slgm7"]
 [ext_resource type="Resource" uid="uid://kkqsw6i1727g" path="res://Resources/Exam Duel Style 2.tres" id="60_d776q"]
 [ext_resource type="PackedScene" uid="uid://domeiwo6dfuu6" path="res://Prefabs/Card.tscn" id="61_ocmuj"]
+[ext_resource type="PackedScene" uid="uid://b4r8xarnbfico" path="res://Prefabs/ToolOCards.tscn" id="63_173sh"]
+[ext_resource type="Theme" uid="uid://0pa3y3bjs30g" path="res://Gelcast/Misc/Gelcast Theme.tres" id="63_gs8w7"]
 [ext_resource type="Script" path="res://Scripts/CardHUD.cs" id="63_lrgly"]
 [ext_resource type="Script" path="res://Scripts/FieldHUD.cs" id="64_fq88x"]
+[ext_resource type="PackedScene" uid="uid://c83e8u5ep7ppc" path="res://Prefabs/Upgrade.tscn" id="64_w0xd6"]
 
 [node name="main_scene" type="Node2D" node_paths=PackedStringArray("playerHUD", "opponentHUD", "fieldHUD", "gameFlow")]
 script = ExtResource("1_4elw1")
@@ -79,6 +82,8 @@ handleCards = Array[Resource]([ExtResource("19_r1ijr"), ExtResource("20_ucusq"),
 upgradeCards = Array[Resource]([ExtResource("34_2a0bs"), ExtResource("35_yuu5t"), ExtResource("36_7igi8"), ExtResource("37_2dnkl"), ExtResource("38_t5pa6"), ExtResource("39_r2jxu"), ExtResource("40_x6auf"), ExtResource("41_43gxg"), ExtResource("42_geqqr"), ExtResource("43_ljpuf"), ExtResource("44_lxqxh"), ExtResource("45_jqpus"), ExtResource("46_j6gl4"), ExtResource("47_tru68"), ExtResource("48_7x0g7"), ExtResource("49_siscf"), ExtResource("50_np886")])
 examCards = Array[Resource]([ExtResource("51_l2g6p"), ExtResource("52_jfoww"), ExtResource("53_8yell"), ExtResource("54_qd5w6"), ExtResource("55_vdcfs"), ExtResource("56_yjl8b"), ExtResource("57_usjxk"), ExtResource("58_u3ugu"), ExtResource("59_slgm7"), ExtResource("60_d776q")])
 cardPrefab = ExtResource("61_ocmuj")
+toolPrefab = ExtResource("63_173sh")
+upgradePrefab = ExtResource("64_w0xd6")
 
 [node name="HUD" type="Control" parent="."]
 layout_mode = 3
@@ -90,14 +95,16 @@ offset_bottom = 40.0
 layout_mode = 0
 offset_right = 404.0
 offset_bottom = 190.0
-text = "Yeeeeeeeeeeeeee"
+theme = ExtResource("63_gs8w7")
+text = "[Card Description]
+"
 
 [node name="Player Cards" type="Control" parent="HUD" node_paths=PackedStringArray("playerCardAnchor")]
 anchors_preset = 0
 offset_left = 320.0
-offset_top = 270.0
+offset_top = 300.0
 offset_right = 680.0
-offset_bottom = 398.0
+offset_bottom = 428.0
 script = ExtResource("63_lrgly")
 playerCardAnchor = NodePath(".")
 

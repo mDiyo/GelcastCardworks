@@ -1,7 +1,8 @@
-[gd_resource type="Resource" load_steps=4 format=3 uid="uid://cxlvx60t1mgv"]
+[gd_resource type="Resource" load_steps=5 format=3 uid="uid://cxlvx60t1mgv"]
 
 [ext_resource type="Texture2D" path="res://Textures/Tools/Slices/head_pick_iron.tres" id="1_iic0d"]
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_yfppv"]
+[ext_resource type="PackedScene" uid="uid://c8naacqrfjrw7" path="res://Prefabs/Head - Pick.tscn" id="2_282v5"]
 [ext_resource type="Texture2D" uid="uid://b70wf3ojc8qlv" path="res://Textures/Cards/Parts/card_pickhead_iron.png" id="2_o17ak"]
 
 [resource]
@@ -11,7 +12,8 @@ durability = 3
 power = 1
 style = 1
 slots = 2
-texture = ExtResource("2_o17ak")
-itemSprite = ExtResource("1_iic0d")
-itemOverrides = null
+upgradeOverrides = null
 identifier = "card.head.pick.iron"
+inventorySprite = ExtResource("2_o17ak")
+worldSprite = ExtResource("1_iic0d")
+model = ExtResource("2_282v5")

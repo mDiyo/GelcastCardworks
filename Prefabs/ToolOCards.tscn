@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4r8xarnbfico"]
+
+[ext_resource type="Texture2D" uid="uid://bu8eothcv3vs2" path="res://Textures/Tools/Debug/tool_error.png" id="1_agmeg"]
+[ext_resource type="Script" path="res://Scripts/ToolOfCards.cs" id="2_po5ba"]
+
+[node name="Tool" type="Sprite2D"]
+texture = ExtResource("1_agmeg")
+script = ExtResource("2_po5ba")

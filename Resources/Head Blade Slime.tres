@@ -1,8 +1,9 @@
-[gd_resource type="Resource" load_steps=4 format=3 uid="uid://bkg836xjaafov"]
+[gd_resource type="Resource" load_steps=5 format=3 uid="uid://bkg836xjaafov"]
 
 [ext_resource type="Texture2D" uid="uid://bpanksdvhpn7b" path="res://Textures/Tools/Slices/head_blade_slime.tres" id="1_6jrwi"]
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_ujx2s"]
-[ext_resource type="Texture2D" uid="uid://byer00w0pi5kx" path="res://Textures/Cards/card_bladehead_slime.png" id="2_pbpdb"]
+[ext_resource type="PackedScene" uid="uid://b1n0ce5yqc7l6" path="res://Prefabs/Head - Blade.tscn" id="2_4on0m"]
+[ext_resource type="Texture2D" uid="uid://byer00w0pi5kx" path="res://Textures/Cards/Parts/card_bladehead_slime.png" id="2_pbpdb"]
 
 [resource]
 script = ExtResource("1_ujx2s")
@@ -11,7 +12,8 @@ durability = 2
 power = 3
 style = 1
 slots = 1
-texture = ExtResource("2_pbpdb")
-itemSprite = ExtResource("1_6jrwi")
-itemOverrides = null
+upgradeOverrides = null
 identifier = "card.head.blade.slime"
+inventorySprite = ExtResource("2_pbpdb")
+worldSprite = ExtResource("1_6jrwi")
+model = ExtResource("2_4on0m")

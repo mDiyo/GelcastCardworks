@@ -1,7 +1,8 @@
-[gd_resource type="Resource" load_steps=4 format=3 uid="uid://c8kcva4bk3pfg"]
+[gd_resource type="Resource" load_steps=5 format=3 uid="uid://c8kcva4bk3pfg"]
 
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_0kfqa"]
 [ext_resource type="Texture2D" path="res://Textures/Tools/Slices/handle_quality_wood.tres" id="1_d81x5"]
+[ext_resource type="PackedScene" uid="uid://stg05polroaw" path="res://Prefabs/Handle - Quality.tscn" id="2_8bwtc"]
 [ext_resource type="Texture2D" uid="uid://bdc07clt8jiop" path="res://Textures/Cards/Parts/card_qualityrod_wood.png" id="2_rld1u"]
 
 [resource]
@@ -11,7 +12,8 @@ durability = 1
 power = 1
 style = 1
 slots = 1
-overrides = null
+upgradeOverrides = null
 identifier = "card.handle.quality.wood"
 inventorySprite = ExtResource("2_rld1u")
 worldSprite = ExtResource("1_d81x5")
+model = ExtResource("2_8bwtc")

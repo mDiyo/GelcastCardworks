@@ -1,11 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://bpll6h8wl71u2"]
+[gd_scene load_steps=3 format=3 uid="uid://ch7whn32vnvpe"]
 
 [ext_resource type="Texture2D" uid="uid://b2sux7vawogsw" path="res://Textures/Tools/Debug/Slices/handle_slotted_error.tres" id="1_6h8j1"]
 [ext_resource type="Script" path="res://Scripts/ToolPart.cs" id="2_tmk45"]
 
-[node name="Handle" type="Sprite2D" node_paths=PackedStringArray("singleSlotAttach", "multiSlotAttach", "highAttachPoint", "lowAttachPoint")]
+[node name="Handle - Slotted" type="Sprite2D" node_paths=PackedStringArray("singleSlotAttach", "multiSlotAttach", "highAttachPoint", "lowAttachPoint")]
+position = Vector2(0, -18)
 texture = ExtResource("1_6h8j1")
-offset = Vector2(0, -18)
 script = ExtResource("2_tmk45")
 singleSlotAttach = NodePath("slot1")
 multiSlotAttach = [NodePath("slot1"), NodePath("slot2"), NodePath("slot3")]
@@ -13,16 +13,16 @@ highAttachPoint = NodePath("attach_high")
 lowAttachPoint = NodePath("attach_low")
 
 [node name="attach_high" type="Node2D" parent="."]
-position = Vector2(0, -26)
+position = Vector2(0, -8)
 
 [node name="attach_low" type="Node2D" parent="."]
-position = Vector2(0, -9)
+position = Vector2(0, 9)
 
 [node name="slot1" type="Node2D" parent="."]
-position = Vector2(0, 5)
+position = Vector2(0, 23)
 
 [node name="slot2" type="Node2D" parent="."]
-position = Vector2(0, -6)
+position = Vector2(0, 12)
 
 [node name="slot3" type="Node2D" parent="."]
-position = Vector2(0, -15)
+position = Vector2(0, 3)

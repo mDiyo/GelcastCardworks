@@ -1,8 +1,9 @@
-[gd_resource type="Resource" load_steps=4 format=3 uid="uid://cmbgy1w8xumkr"]
+[gd_resource type="Resource" load_steps=5 format=3 uid="uid://cmbgy1w8xumkr"]
 
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_ln4jj"]
 [ext_resource type="Texture2D" uid="uid://bnhvoodaykfpt" path="res://Textures/Tools/Slices/head_pick_magic.tres" id="1_ma4tq"]
-[ext_resource type="Texture2D" uid="uid://bxjpbe0ufnubo" path="res://Textures/Cards/card_pickhead_magic.png" id="2_a0n08"]
+[ext_resource type="Texture2D" uid="uid://bxjpbe0ufnubo" path="res://Textures/Cards/Parts/card_pickhead_magic.png" id="2_a0n08"]
+[ext_resource type="PackedScene" uid="uid://c8naacqrfjrw7" path="res://Prefabs/Head - Pick.tscn" id="2_vhxuj"]
 
 [resource]
 script = ExtResource("1_ln4jj")
@@ -11,7 +12,8 @@ durability = 3
 power = 2
 style = 1
 slots = 1
-texture = ExtResource("2_a0n08")
-itemSprite = ExtResource("1_ma4tq")
-itemOverrides = null
+upgradeOverrides = null
 identifier = "card.head.pick.magic"
+inventorySprite = ExtResource("2_a0n08")
+worldSprite = ExtResource("1_ma4tq")
+model = ExtResource("2_vhxuj")

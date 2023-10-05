@@ -72,7 +72,7 @@ public partial class ToolOfCards : ItemInstance
 		}
 		if (handle != null)
 		{
-			int headConsumed = upgradePositions.Length;
+			int headConsumed = upgradePositions == null ? 0 : upgradePositions.Length;
 			upgradePositions = handle.GetAttachSlots(upgrades.Count - headConsumed);
 			for (int i = headConsumed; i < upgrades.Count; i++)
 			{

@@ -51,9 +51,12 @@ namespace Gelcast.Example.Card
 
 			Item[] testHand1 = new Item[] { hand[0].item, hand[1].item, hand[4].item };
 			Item[] testHand2 = new Item[] { handOpponent[0].item, handOpponent[1].item, handOpponent[4].item };
+			Item[] testHand3 = new Item[] { hand[2].item, hand[3].item, hand[5].item, hand[6].item, hand[7].item };
+			Item[] testHand4 = new Item[] { handOpponent[2].item, handOpponent[3].item, handOpponent[5].item, handOpponent[6].item, handOpponent[7].item };
 
 			test test = new test();
 			test.Test(this, testHand1, testHand2);
+			test.Test(this, testHand3, testHand4, 32);
 		}
 
 		void BuildDecks()

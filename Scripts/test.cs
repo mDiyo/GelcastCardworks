@@ -6,7 +6,7 @@ namespace Gelcast.Example.Card
 	public partial class test
 	{
 		GameFlow game;
-		public void Test(GameFlow game, Item[] playerCards, Item[] opponentCards)
+		public void Test(GameFlow game, Item[] playerCards, Item[] opponentCards, int offset = 0)
 		{
 			this.game = game;
 
@@ -15,9 +15,8 @@ namespace Gelcast.Example.Card
 			Variant scale = ProjectSettings.GetSetting("display/window/stretch/scale");
 			GD.Print("Viewport: " + w + " | " + h + " : " + scale);
 
-			ToolOfCards tool1 = BuildTool((int)w * 1 / 4 / (int)scale, (int)h / 2 / (int)scale, playerCards);
-			ToolOfCards tool2 = BuildTool((int)w * 3 / 4 / (int)scale, (int)h / 2 / (int)scale, opponentCards);
-
+			ToolOfCards tool1 = BuildTool((int)w * 1 / 4 / (int)scale - offset, (int)h / 2 / (int)scale + 8, playerCards);
+			ToolOfCards tool2 = BuildTool((int)w * 3 / 4 / (int)scale + offset, (int)h / 2 / (int)scale + 8, opponentCards);
 			//GD.Print("Tool 1: " + tool1 + " " + tool1.Position);
 			//GD.Print("Tool 2: " + tool2 + " " + tool2.Position);
 		}

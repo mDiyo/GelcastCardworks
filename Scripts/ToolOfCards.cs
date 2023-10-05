@@ -10,7 +10,7 @@ public partial class ToolOfCards : ItemInstance
 
 	public void Modify(Item item, bool add, bool build = true)
 	{
-		GD.Print("All hail " + item);
+		//GD.Print("All hail " + item.identifier);
 		if (add)
 			items.Add(item);
 		else
@@ -26,16 +26,67 @@ public partial class ToolOfCards : ItemInstance
 			model.QueueFree();
 		models.Clear();
 
+		ToolPart head = null;
+		ToolPart handle = null;
+		List<Sprite2D> upgrades = new List<Sprite2D>();
 		foreach (Item item in items)
 		{
-			Node model = null;
-			GD.Print("Item: " + item);
+			Sprite2D model = null;
 			if (item.model != null)
-				model = item.model.Instantiate();
+				model = item.model.Instantiate<Sprite2D>();
 			else
-				model = GameFlow.UpgradePrefab.Instantiate();
+				model = GameFlow.UpgradePrefab.Instantiate<Sprite2D>();
+			model.Texture = item.GetWorldSprite();
 			AddChild(model);
+
+			if (item.identifier.Contains("head"))
+				head = (ToolPart)model;
+			else if (item.identifier.Contains("handle"))
+				handle = (ToolPart)model;
+			else
+				upgrades.Add(model);
 		}
+
+		GD.Print("Head: " + head + ", Handle: " + handle);
+
+		if (handle != null && head != null)
+		{
+			this.RemoveChild(head);
+			handle.AddChild(head);
+			head.Position = handle.GetAttachPoint(head.attachTo);
+		}
+
+		Vector2[] upgradePositions = null;
+		if (head != null)
+		{
+			upgradePositions = head.GetAttachSlots(upgrades.Count);
+			for (int i = 0; i < upgrades.Count; i++)
+			{
+				if (i >= upgradePositions.Length)
+					break;
+
+				this.RemoveChild(upgrades[i]);
+				head.AddChild(upgrades[i]);
+				upgrades[i].Position = upgradePositions[i];
+			}
+		}
+		if (handle != null)
+		{
+			int headConsumed = upgradePositions.Length;
+			upgradePositions = handle.GetAttachSlots(upgrades.Count - headConsumed);
+			for (int i = headConsumed; i < upgrades.Count; i++)
+			{
+				if (i >= upgradePositions.Length)
+					break;
+
+				this.RemoveChild(upgrades[i]);
+				handle.AddChild(upgrades[i]);
+				upgrades[i].Position = upgradePositions[i];
+			}
+		}
+
+
+		Texture = null;
 	}
 
 	// Called when the node enters the scene tree for the first time.

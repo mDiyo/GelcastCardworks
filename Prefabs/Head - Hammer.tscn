@@ -4,6 +4,7 @@
 [ext_resource type="Script" path="res://Scripts/ToolPart.cs" id="2_3f3rk"]
 
 [node name="Head - Hammer" type="Sprite2D" node_paths=PackedStringArray("singleSlotAttach", "multiSlotAttach")]
+z_index = 1
 texture = ExtResource("1_0kail")
 script = ExtResource("2_3f3rk")
 singleSlotAttach = NodePath("slot1")

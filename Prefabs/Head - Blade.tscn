@@ -4,11 +4,13 @@
 [ext_resource type="Script" path="res://Scripts/ToolPart.cs" id="2_k5wtk"]
 
 [node name="Head - Blade" type="Sprite2D" node_paths=PackedStringArray("singleSlotAttach", "multiSlotAttach")]
+z_index = 1
 texture = ExtResource("1_eg3eo")
 offset = Vector2(0, -19)
 script = ExtResource("2_k5wtk")
 singleSlotAttach = NodePath("slot1")
 multiSlotAttach = [NodePath("slot2"), NodePath("slot1")]
+attachTo = 1
 
 [node name="slot1" type="Node2D" parent="."]
 position = Vector2(0, -18)

@@ -58,7 +58,7 @@ namespace Gelcast.Example.Card
 
 				cardHand[i].Position = new Vector2(cardOffset, 0);
 				cardHand[i].ZIndex = cardDepth + i;
-				GD.Print(Name + " " + i + ": " + cardHand[i].Name);
+				//GD.Print(Name + " " + i + ": " + cardHand[i].Name);
 			}
 
 			cardHand[currentCard].MoveLocalY(selectOffset);

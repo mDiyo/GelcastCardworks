@@ -8,7 +8,7 @@ position = Vector2(0, -18)
 texture = ExtResource("1_wxmp4")
 script = ExtResource("2_ubrsw")
 singleSlotAttach = NodePath("slot1")
-multiSlotAttach = []
+multiSlotAttach = [NodePath("slot1")]
 highAttachPoint = NodePath("attach_high")
 lowAttachPoint = NodePath("attach_low")
 

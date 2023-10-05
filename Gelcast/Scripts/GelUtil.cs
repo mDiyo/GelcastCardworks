@@ -61,20 +61,4 @@ public static class GelUtil
 		list.RemoveAt(list.Count - 1);
 		return currentFirst;
 	}
-
-	//Sort values by y, then x
-	public static int SortCoords(Vector2I a, Vector2I b)
-	{
-		if (a.Y < b.Y)
-			return -1;
-		if (a.Y > b.Y)
-			return 1;
-
-		if (a.X < b.X)
-			return -1;
-		if (a.X > b.X)
-			return 1;
-
-		return 0;
-	}
 }

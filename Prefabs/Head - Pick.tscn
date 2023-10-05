@@ -4,6 +4,7 @@
 [ext_resource type="Script" path="res://Scripts/ToolPart.cs" id="2_tdfok"]
 
 [node name="Head - Pick" type="Sprite2D" node_paths=PackedStringArray("singleSlotAttach", "multiSlotAttach")]
+z_index = 1
 texture = ExtResource("1_0bxl6")
 script = ExtResource("2_tdfok")
 singleSlotAttach = NodePath("slot1")

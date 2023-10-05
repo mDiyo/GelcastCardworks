@@ -13,13 +13,13 @@ namespace Gelcast.Example.Card
 			Variant w = ProjectSettings.GetSetting("display/window/size/viewport_width");
 			Variant h = ProjectSettings.GetSetting("display/window/size/viewport_height");
 			Variant scale = ProjectSettings.GetSetting("display/window/stretch/scale");
-			GD.Print(w + " | " + h);
+			GD.Print("Viewport: " + w + " | " + h + " : " + scale);
 
 			ToolOfCards tool1 = BuildTool((int)w * 1 / 4 / (int)scale, (int)h / 2 / (int)scale, playerCards);
 			ToolOfCards tool2 = BuildTool((int)w * 3 / 4 / (int)scale, (int)h / 2 / (int)scale, opponentCards);
 
-			GD.Print("Tool 1: " + tool1 + " " + tool1.Position);
-			GD.Print("Tool 2: " + tool2 + " " + tool2.Position);
+			//GD.Print("Tool 1: " + tool1 + " " + tool1.Position);
+			//GD.Print("Tool 2: " + tool2 + " " + tool2.Position);
 		}
 
 		private int count = 1;

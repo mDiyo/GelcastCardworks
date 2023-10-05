@@ -3,14 +3,17 @@ using System;
 
 namespace Gelcast.Example.Card
 {
-    public partial class ToolPart : Node2D
+    public enum AttachPoint { High, Low, Slot, None }
+    public partial class ToolPart : Sprite2D
     {
         [Export] public Node2D singleSlotAttach;
         [Export] public Node2D[] multiSlotAttach;
         [Export] public Node2D highAttachPoint; // Standard heads
         [Export] public Node2D lowAttachPoint;  // Long heads, like blades
+        [Export] public AttachPoint attachTo;
 
-        //Nodes are for nicely viewing parts in the editor. We don't actually want the extra nodes
+        // Nodes are for nicely viewing parts in the editor. 
+        // We don't actually want the extra nodes, just their position
         private Vector2[] attachPoints;
         private Vector2 singleSlot;
         private Vector2[] multiSlot;
@@ -33,6 +36,24 @@ namespace Gelcast.Example.Card
             singleSlotAttach.QueueFree();
             for (int i = 0; i < multiSlotAttach.Length; i++)
                 multiSlotAttach[i].QueueFree();
+        }
+
+        public Vector2 GetAttachPoint(AttachPoint attachPoint)
+        {
+            switch (attachPoint)
+            {
+                case AttachPoint.High: return attachPoints[0];
+                case AttachPoint.Low: return attachPoints[1];
+                case AttachPoint.Slot: return singleSlot;
+            }
+            throw new NotImplementedException();
+        }
+
+        public Vector2[] GetAttachSlots(int numberOfCards)
+        {
+            if (numberOfCards == 1)
+                return new Vector2[] { singleSlot };
+            return multiSlot;
         }
     }
 }

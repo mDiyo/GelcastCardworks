@@ -101,18 +101,18 @@ text = "[Card Description]
 
 [node name="Player Cards" type="Control" parent="HUD" node_paths=PackedStringArray("playerCardAnchor")]
 anchors_preset = 0
-offset_left = 320.0
+offset_left = 200.0
 offset_top = 300.0
-offset_right = 680.0
+offset_right = 440.0
 offset_bottom = 428.0
 script = ExtResource("63_lrgly")
 playerCardAnchor = NodePath(".")
 
 [node name="Opponent Cards" type="Control" parent="HUD" node_paths=PackedStringArray("playerCardAnchor")]
 anchors_preset = 0
-offset_left = 320.0
+offset_left = 440.0
 offset_top = 64.0
-offset_right = 360.0
+offset_right = 920.0
 offset_bottom = 104.0
 script = ExtResource("63_lrgly")
 playerCardAnchor = NodePath(".")

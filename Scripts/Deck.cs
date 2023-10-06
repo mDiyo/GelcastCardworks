@@ -16,34 +16,34 @@ namespace Gelcast.Example.Card
 			parent = node;
 		}
 
-		public void AddNewCards(PackedScene cardPrefab, Card[] cards, System.Random rng, bool shuffle = false)
+		public void AddNewCards(PackedScene cardTemplate, Card[] cards, System.Random rng, bool shuffle = false)
 		{
 			for (int i = 0; i < cards.Length; i++)
-				deck.Add(BuildNewCard(cardPrefab, cards[i]));
+				deck.Add(BuildNewCard(cardTemplate, cards[i]));
 			if (shuffle)
 				deck.Shuffle(rng);
 		}
 
-		public void AddNewCards(PackedScene cardPrefab, Exam[] exams, System.Random rng, bool shuffle = false)
+		public void AddNewCards(PackedScene cardTemplate, Exam[] exams, System.Random rng, bool shuffle = false)
 		{
 			for (int i = 0; i < exams.Length; i++)
-				deck.Add(BuildNewCard(cardPrefab, exams[i]));
+				deck.Add(BuildNewCard(cardTemplate, exams[i]));
 			if (shuffle)
 				deck.Shuffle(rng);
 		}
 
-		public CardInstance BuildNewCard(PackedScene cardPrefab, Card data)
+		public CardInstance BuildNewCard(PackedScene cardTemplate, Card data)
 		{
-			CardInstance card = cardPrefab.Instantiate() as CardInstance;
+			CardInstance card = cardTemplate.Instantiate() as CardInstance;
 			card.Position = new Godot.Vector2(-800 + 4 * deck.Count, -100);
 			card.Init(data);
 			parent.AddChild(card);
 			return card;
 		}
 
-		public CardInstance BuildNewCard(PackedScene cardPrefab, Exam data)
+		public CardInstance BuildNewCard(PackedScene cardTemplate, Exam data)
 		{
-			CardInstance card = cardPrefab.Instantiate() as CardInstance;
+			CardInstance card = cardTemplate.Instantiate() as CardInstance;
 			card.Position = new Godot.Vector2(-100, -100);
 			card.Init(data);
 			return card;

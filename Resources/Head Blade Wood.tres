@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cigq11wa1libd" path="res://Textures/Tools/Slices/head_blade_wood.tres" id="1_2vuey"]
 [ext_resource type="Texture2D" uid="uid://8qtqrd66hp85" path="res://Textures/Cards/Parts/card_bladehead_wood.png" id="1_i4gic"]
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_qpej5"]
-[ext_resource type="PackedScene" uid="uid://b1n0ce5yqc7l6" path="res://Prefabs/Head - Blade.tscn" id="2_onjtw"]
+[ext_resource type="PackedScene" uid="uid://b1n0ce5yqc7l6" path="res://Templates/Head - Blade.tscn" id="2_onjtw"]
 
 [resource]
 script = ExtResource("1_qpej5")

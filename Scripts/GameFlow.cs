@@ -15,13 +15,13 @@ namespace Gelcast.Example.Card
 		[Export] public Card[] handleCards;
 		[Export] public Card[] upgradeCards;
 		[Export] public Exam[] examCards;
-		[Export] public PackedScene cardPrefab;
-		[Export] public PackedScene toolPrefab;
-		[Export] public PackedScene upgradePrefab;
+		[Export] public PackedScene cardTemplate;
+		[Export] public PackedScene toolTemplate;
+		[Export] public PackedScene upgradeTemplate;
 
-		public static PackedScene CardPrefab;
-		public static PackedScene ToolPrefab;
-		public static PackedScene UpgradePrefab;
+		public static PackedScene CardTemplate;
+		public static PackedScene ToolTemplate;
+		public static PackedScene UpgradeTemplate;
 
 		private Deck partDeck;
 		private Deck upgradeDeck;
@@ -36,9 +36,9 @@ namespace Gelcast.Example.Card
 		public void Init(CardGame game)
 		{
 			GameFlow.game = game;
-			GameFlow.CardPrefab = cardPrefab;
-			GameFlow.ToolPrefab = toolPrefab;
-			GameFlow.UpgradePrefab = upgradePrefab;
+			GameFlow.CardTemplate = cardTemplate;
+			GameFlow.ToolTemplate = toolTemplate;
+			GameFlow.UpgradeTemplate = upgradeTemplate;
 
 			partDeck = new Deck(game.playerHUD);
 			upgradeDeck = new Deck(game.playerHUD);
@@ -61,15 +61,15 @@ namespace Gelcast.Example.Card
 
 		void BuildDecks()
 		{
-			partDeck.AddNewCards(cardPrefab, headCards, rng);
-			partDeck.AddNewCards(cardPrefab, handleCards, rng, true);
-			upgradeDeck.AddNewCards(cardPrefab, upgradeCards, rng, true);
+			partDeck.AddNewCards(cardTemplate, headCards, rng);
+			partDeck.AddNewCards(cardTemplate, handleCards, rng, true);
+			upgradeDeck.AddNewCards(cardTemplate, upgradeCards, rng, true);
 
-			partDeckOpponent.AddNewCards(cardPrefab, headCards, rng);
-			partDeckOpponent.AddNewCards(cardPrefab, handleCards, rng, true);
-			upgradeDeckOpponent.AddNewCards(cardPrefab, upgradeCards, rng, true);
+			partDeckOpponent.AddNewCards(cardTemplate, headCards, rng);
+			partDeckOpponent.AddNewCards(cardTemplate, handleCards, rng, true);
+			upgradeDeckOpponent.AddNewCards(cardTemplate, upgradeCards, rng, true);
 
-			examDeck.AddNewCards(cardPrefab, examCards, rng, true);
+			examDeck.AddNewCards(cardTemplate, examCards, rng, true);
 		}
 
 		public void DrawCards(int parts, int upgrades, int partsOpponent, int upgradesOpponent, int exams)

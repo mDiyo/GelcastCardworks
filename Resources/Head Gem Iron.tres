@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_0xuiy"]
 [ext_resource type="Texture2D" uid="uid://cqypq5povras4" path="res://Textures/Cards/Parts/card_gemhead_iron.png" id="1_5305u"]
 [ext_resource type="Texture2D" path="res://Textures/Tools/Slices/head_gem_iron.tres" id="1_ayly2"]
-[ext_resource type="PackedScene" uid="uid://cbb4x7e0ggyr0" path="res://Prefabs/Head - Gem.tscn" id="2_jl8j7"]
+[ext_resource type="PackedScene" uid="uid://cbb4x7e0ggyr0" path="res://Templates/Head - Gem.tscn" id="2_jl8j7"]
 
 [resource]
 script = ExtResource("1_0xuiy")

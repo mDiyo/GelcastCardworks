@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bj3l6ftrur741" path="res://Textures/Tools/Slices/head_hammer_wood.tres" id="1_gy161"]
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_y77w8"]
 [ext_resource type="Texture2D" uid="uid://bnynhqmatdk34" path="res://Textures/Cards/Parts/card_hammerhead_wood.png" id="2_846ea"]
-[ext_resource type="PackedScene" uid="uid://bqicb7wccat3r" path="res://Prefabs/Head - Hammer.tscn" id="2_dwaaw"]
+[ext_resource type="PackedScene" uid="uid://bqicb7wccat3r" path="res://Templates/Head - Hammer.tscn" id="2_dwaaw"]
 
 [resource]
 script = ExtResource("1_y77w8")

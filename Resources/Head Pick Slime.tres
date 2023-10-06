@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_e5f1t"]
 [ext_resource type="Texture2D" uid="uid://caxxvowikxykg" path="res://Textures/Tools/Slices/head_pick_slime.tres" id="1_ouyko"]
 [ext_resource type="Texture2D" uid="uid://b7ygh2kl5mhgp" path="res://Textures/Cards/Parts/card_pickhead_slime.png" id="2_i81nn"]
-[ext_resource type="PackedScene" uid="uid://c8naacqrfjrw7" path="res://Prefabs/Head - Pick.tscn" id="2_weisu"]
+[ext_resource type="PackedScene" uid="uid://c8naacqrfjrw7" path="res://Templates/Head - Pick.tscn" id="2_weisu"]
 
 [resource]
 script = ExtResource("1_e5f1t")

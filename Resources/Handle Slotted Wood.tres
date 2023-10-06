@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b4sjno46qeor8" path="res://Textures/Tools/Slices/handle_slotted_wood.tres" id="1_dbvtb"]
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_kmnib"]
-[ext_resource type="PackedScene" uid="uid://ch7whn32vnvpe" path="res://Prefabs/Handle - Slotted.tscn" id="2_hf6g6"]
+[ext_resource type="PackedScene" uid="uid://ch7whn32vnvpe" path="res://Templates/Handle - Slotted.tscn" id="2_hf6g6"]
 [ext_resource type="Texture2D" uid="uid://1020c2u4q1iq" path="res://Textures/Cards/Parts/card_slotrod_wood.png" id="2_sif53"]
 
 [resource]

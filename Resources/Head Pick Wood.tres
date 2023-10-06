@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" path="res://Textures/Tools/Slices/head_pick_wood.tres" id="1_bx7ic"]
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_ldco4"]
-[ext_resource type="PackedScene" uid="uid://c8naacqrfjrw7" path="res://Prefabs/Head - Pick.tscn" id="2_77lj0"]
+[ext_resource type="PackedScene" uid="uid://c8naacqrfjrw7" path="res://Templates/Head - Pick.tscn" id="2_77lj0"]
 [ext_resource type="Texture2D" uid="uid://cospw78fidnv7" path="res://Textures/Cards/Parts/card_pickhead_wood.png" id="2_h7lg6"]
 
 [resource]

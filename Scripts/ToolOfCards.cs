@@ -35,7 +35,7 @@ public partial class ToolOfCards : ItemInstance
 			if (item.model != null)
 				model = item.model.Instantiate<Sprite2D>();
 			else
-				model = GameFlow.UpgradePrefab.Instantiate<Sprite2D>();
+				model = GameFlow.UpgradeTemplate.Instantiate<Sprite2D>();
 			model.Texture = item.GetWorldSprite();
 			AddChild(model);
 

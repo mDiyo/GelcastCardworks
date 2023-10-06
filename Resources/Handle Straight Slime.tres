@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b5bji3u57qmdv" path="res://Textures/Tools/Slices/handle_straight_slime.tres" id="1_5cbe7"]
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_ytpvf"]
-[ext_resource type="PackedScene" uid="uid://cmpsuoymqy07g" path="res://Prefabs/Handle - Straight.tscn" id="2_1n6d4"]
+[ext_resource type="PackedScene" uid="uid://cmpsuoymqy07g" path="res://Templates/Handle - Straight.tscn" id="2_1n6d4"]
 [ext_resource type="Texture2D" uid="uid://c0hp25o1rfsjo" path="res://Textures/Cards/Parts/card_straightrod_slime.png" id="2_fio7p"]
 
 [resource]

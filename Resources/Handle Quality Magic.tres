@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" path="res://Textures/Tools/Slices/handle_quality_magic.tres" id="1_6fqb7"]
 [ext_resource type="Texture2D" uid="uid://04mwl6v3lvwr" path="res://Textures/Cards/Parts/card_qualityrod_magic.png" id="1_28uro"]
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_61k0f"]
-[ext_resource type="PackedScene" uid="uid://stg05polroaw" path="res://Prefabs/Handle - Quality.tscn" id="2_lonhu"]
+[ext_resource type="PackedScene" uid="uid://stg05polroaw" path="res://Templates/Handle - Quality.tscn" id="2_lonhu"]
 
 [resource]
 script = ExtResource("1_61k0f")

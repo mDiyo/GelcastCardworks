@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" path="res://Textures/Tools/Slices/handle_tough_wood.tres" id="1_e0sh8"]
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_rdbwl"]
 [ext_resource type="Texture2D" uid="uid://8ufrg3qr7f75" path="res://Textures/Cards/Parts/card_toughrod_wood.png" id="2_2w8vx"]
-[ext_resource type="PackedScene" uid="uid://c72ale7od82sg" path="res://Prefabs/Handle - Tough.tscn" id="2_aw3us"]
+[ext_resource type="PackedScene" uid="uid://c72ale7od82sg" path="res://Templates/Handle - Tough.tscn" id="2_aw3us"]
 
 [resource]
 script = ExtResource("1_rdbwl")

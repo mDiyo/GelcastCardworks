@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dm44v1jnccsnp" path="res://Textures/Tools/Slices/head_blade_magic.tres" id="1_kjw8m"]
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_pfh7l"]
-[ext_resource type="PackedScene" uid="uid://b1n0ce5yqc7l6" path="res://Prefabs/Head - Blade.tscn" id="2_18550"]
+[ext_resource type="PackedScene" uid="uid://b1n0ce5yqc7l6" path="res://Templates/Head - Blade.tscn" id="2_18550"]
 [ext_resource type="Texture2D" uid="uid://bqkttruj1ml5u" path="res://Textures/Cards/Parts/card_bladehead_magic.png" id="2_xv0rm"]
 
 [resource]

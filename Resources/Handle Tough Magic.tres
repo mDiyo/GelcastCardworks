@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_2s8et"]
 [ext_resource type="Texture2D" path="res://Textures/Tools/Slices/handle_tough_magic.tres" id="1_5d072"]
-[ext_resource type="PackedScene" uid="uid://c72ale7od82sg" path="res://Prefabs/Handle - Tough.tscn" id="2_meiw6"]
+[ext_resource type="PackedScene" uid="uid://c72ale7od82sg" path="res://Templates/Handle - Tough.tscn" id="2_meiw6"]
 [ext_resource type="Texture2D" uid="uid://bpum70ncfjgjf" path="res://Textures/Cards/Parts/card_toughrod_magic.png" id="2_y17c4"]
 
 [resource]

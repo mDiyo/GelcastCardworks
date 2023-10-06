@@ -24,7 +24,7 @@ namespace Gelcast.Example.Card
 		private int count = 1;
 		public ToolOfCards BuildTool(int x, int y, Item[] toolParts)
 		{
-			ToolOfCards tool = game.toolPrefab.Instantiate<ToolOfCards>();
+			ToolOfCards tool = game.toolTemplate.Instantiate<ToolOfCards>();
 			tool.Position = new Vector2(x, y);
 			tool.Name = "Tool " + count;
 			game.AddChild(tool);

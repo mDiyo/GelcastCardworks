@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_2eb6b"]
 [ext_resource type="Texture2D" uid="uid://ckrju207cr4tf" path="res://Textures/Tools/Slices/handle_slotted_magic.tres" id="1_lja02"]
 [ext_resource type="Texture2D" uid="uid://d33gy2otk8n34" path="res://Textures/Cards/Parts/card_slotrod_magic.png" id="2_g45vh"]
-[ext_resource type="PackedScene" uid="uid://ch7whn32vnvpe" path="res://Prefabs/Handle - Slotted.tscn" id="2_xigej"]
+[ext_resource type="PackedScene" uid="uid://ch7whn32vnvpe" path="res://Templates/Handle - Slotted.tscn" id="2_xigej"]
 
 [resource]
 script = ExtResource("1_2eb6b")

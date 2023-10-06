@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_55ol7"]
 [ext_resource type="Texture2D" uid="uid://dexq1rq38cfm1" path="res://Textures/Tools/Slices/head_hammer_iron.tres" id="1_xf5mm"]
-[ext_resource type="PackedScene" uid="uid://bqicb7wccat3r" path="res://Prefabs/Head - Hammer.tscn" id="2_nrovc"]
+[ext_resource type="PackedScene" uid="uid://bqicb7wccat3r" path="res://Templates/Head - Hammer.tscn" id="2_nrovc"]
 [ext_resource type="Texture2D" uid="uid://dni11prw2qxem" path="res://Textures/Cards/Parts/card_hammerhead_iron.png" id="3_xoins"]
 
 [resource]

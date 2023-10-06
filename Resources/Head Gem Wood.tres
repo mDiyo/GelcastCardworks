@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/Card.cs" id="1_1a3qi"]
 [ext_resource type="Texture2D" uid="uid://cjr8ewsvpwufa" path="res://Textures/Cards/Parts/card_gemhead_wood.png" id="2_3ax7s"]
-[ext_resource type="PackedScene" uid="uid://cbb4x7e0ggyr0" path="res://Prefabs/Head - Gem.tscn" id="2_8tfg0"]
+[ext_resource type="PackedScene" uid="uid://cbb4x7e0ggyr0" path="res://Templates/Head - Gem.tscn" id="2_8tfg0"]
 [ext_resource type="Texture2D" path="res://Textures/Tools/Slices/head_gem_magic.tres" id="4_qjkfp"]
 
 [resource]

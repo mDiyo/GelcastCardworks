@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b45sn1yagdnax"
-path="res://.godot/imported/blank.png-099ae15ed6591e7a3b657e73c71f2e64.ctex"
+uid="uid://b2u1nl3ggih25"
+path="res://.godot/imported/smeltery_background_1.png-4f73ec58a17c913f3504d818a5490226.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Gelcast/Misc/blank.png"
-dest_files=["res://.godot/imported/blank.png-099ae15ed6591e7a3b657e73c71f2e64.ctex"]
+source_file="res://Textures/UI/smeltery_background_1.png"
+dest_files=["res://.godot/imported/smeltery_background_1.png-4f73ec58a17c913f3504d818a5490226.ctex"]
 
 [params]
 

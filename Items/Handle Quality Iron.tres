@@ -9,7 +9,7 @@
 script = ExtResource("1_gonce")
 type = 0
 durability = 3
-power = 0
+power = 1
 style = 0
 slots = 1
 upgradeOverrides = null

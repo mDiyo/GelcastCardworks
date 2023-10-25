@@ -1,6 +1,6 @@
 [gd_resource type="Theme" load_steps=2 format=3 uid="uid://0pa3y3bjs30g"]
 
-[ext_resource type="FontFile" uid="uid://bvv2jvji5c40h" path="res://Gelcast/Misc/basis33.ttf" id="1_5qh1n"]
+[ext_resource type="FontFile" uid="uid://bvv2jvji5c40h" path="res://lib/Gelcast/Misc/basis33.ttf" id="1_5qh1n"]
 
 [resource]
 default_font = ExtResource("1_5qh1n")

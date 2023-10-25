@@ -1,8 +1,48 @@
-[gd_scene load_steps=3 format=3 uid="uid://b4r8xarnbfico"]
+[gd_scene load_steps=7 format=3 uid="uid://b4r8xarnbfico"]
 
-[ext_resource type="Texture2D" uid="uid://bu8eothcv3vs2" path="res://Textures/Tools/Debug/tool_error.png" id="1_agmeg"]
+[ext_resource type="Texture2D" uid="uid://3acal43mmaeh" path="res://Textures/Cards/tool_statbox.png" id="1_18quu"]
 [ext_resource type="Script" path="res://Scripts/ToolOfCards.cs" id="2_po5ba"]
+[ext_resource type="Texture2D" uid="uid://cs3paf5nuruky" path="res://Textures/Cards/card_icon_durability.png" id="3_6shhi"]
+[ext_resource type="Texture2D" uid="uid://daa8i7x4yiw62" path="res://Textures/Cards/card_icon_power.png" id="5_v5v7w"]
+[ext_resource type="Texture2D" uid="uid://dbkouiwiwtoj5" path="res://Textures/Cards/card_icon_style.png" id="6_1unog"]
+[ext_resource type="Texture2D" uid="uid://c43r7638rgk0" path="res://Textures/Cards/card_icon_slot.png" id="7_cjars"]
 
-[node name="Tool" type="Sprite2D"]
-texture = ExtResource("1_agmeg")
+[node name="Tool" type="Sprite2D" node_paths=PackedStringArray("durabilityIcon", "powerIcon", "styleIcon", "slotIcon")]
+texture = ExtResource("1_18quu")
 script = ExtResource("2_po5ba")
+durabilityIcon = NodePath("Durability-Icon")
+powerIcon = NodePath("Power-Icon")
+styleIcon = NodePath("Style-Icon")
+slotIcon = NodePath("Slots-Icon")
+
+[node name="Durability-Icon" type="Sprite2D" parent="."]
+texture_repeat = 2
+position = Vector2(0, 44)
+texture = ExtResource("3_6shhi")
+region_enabled = true
+region_rect = Rect2(0, 0, 11, 8)
+
+[node name="Power-Icon" type="Sprite2D" parent="."]
+texture_repeat = 2
+position = Vector2(-27, 16)
+texture = ExtResource("5_v5v7w")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 10, 12)
+
+[node name="Style-Icon" type="Sprite2D" parent="."]
+texture_repeat = 2
+position = Vector2(-27, 27)
+texture = ExtResource("6_1unog")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 10, 12)
+
+[node name="Slots-Icon" type="Sprite2D" parent="."]
+z_index = -1
+texture_repeat = 2
+position = Vector2(-42, 12)
+texture = ExtResource("7_cjars")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 18, 9)

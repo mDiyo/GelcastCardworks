@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/CardMetaManipulation.cs" id="1_0gsf0"]
 [ext_resource type="Texture2D" uid="uid://bj13cdjiitsyk" path="res://Textures/Cards/Upgrades/card_upgrade_anticheat.png" id="1_8xmxy"]
-[ext_resource type="Texture2D" uid="uid://b45sn1yagdnax" path="res://Gelcast/Misc/blank.png" id="3_8vln3"]
+[ext_resource type="Texture2D" uid="uid://b45sn1yagdnax" path="res://lib/Gelcast/Misc/blank.png" id="3_8vln3"]
 
 [resource]
 script = ExtResource("1_0gsf0")

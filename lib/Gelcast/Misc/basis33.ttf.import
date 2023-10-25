@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://bvv2jvji5c40h"
-path="res://.godot/imported/basis33.ttf-32731e7a9e0f3d510b5e1209bdf9ce9e.fontdata"
+path="res://.godot/imported/basis33.ttf-476a85eba1002838c555fba57870b71f.fontdata"
 
 [deps]
 
-source_file="res://Gelcast/Misc/basis33.ttf"
-dest_files=["res://.godot/imported/basis33.ttf-32731e7a9e0f3d510b5e1209bdf9ce9e.fontdata"]
+source_file="res://lib/Gelcast/Misc/basis33.ttf"
+dest_files=["res://.godot/imported/basis33.ttf-476a85eba1002838c555fba57870b71f.fontdata"]
 
 [params]
 

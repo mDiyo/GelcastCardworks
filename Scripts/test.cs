@@ -13,7 +13,7 @@ namespace Gelcast.Example.Card
 			Variant w = ProjectSettings.GetSetting("display/window/size/viewport_width");
 			Variant h = ProjectSettings.GetSetting("display/window/size/viewport_height");
 			Variant scale = ProjectSettings.GetSetting("display/window/stretch/scale");
-			GD.Print("Viewport: " + w + " | " + h + " : " + scale);
+			//GD.Print("Viewport: " + w + " | " + h + " : " + scale);
 
 			ToolOfCards tool1 = BuildTool((int)w * 1 / 4 / (int)scale - offset, (int)h / 2 / (int)scale + 8, playerCards);
 			ToolOfCards tool2 = BuildTool((int)w * 3 / 4 / (int)scale + offset, (int)h / 2 / (int)scale + 8, opponentCards);
@@ -28,6 +28,7 @@ namespace Gelcast.Example.Card
 			tool.Position = new Vector2(x, y);
 			tool.Name = "Tool " + count;
 			game.AddChild(tool);
+			tool.Init(null);
 			foreach (Item part in toolParts)
 				tool.Modify(part, true, false);
 			tool.Build();

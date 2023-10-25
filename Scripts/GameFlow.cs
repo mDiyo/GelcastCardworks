@@ -1,7 +1,6 @@
 using Godot;
 using System;
 using System.Collections.Generic;
-using System.Numerics;
 
 namespace Gelcast.Example.Card
 {
@@ -56,7 +55,7 @@ namespace Gelcast.Example.Card
 
 			test test = new test();
 			test.Test(this, testHand1, testHand2);
-			test.Test(this, testHand3, testHand4, 32);
+			test.Test(this, testHand3, testHand4, 80);
 		}
 
 		void BuildDecks()
@@ -140,12 +139,62 @@ namespace Gelcast.Example.Card
 		// Called when the node enters the scene tree for the first time.
 		public override void _Ready()
 		{
+
 		}
+
+		protected double horizontal;
+		protected double vertical;
+		protected bool up;
+		protected bool down;
+		protected bool left;
+		protected bool right;
+		protected double inputDelay;
+		protected double shortInputDelay = 7f * (1f / 60f);
+		protected double longInputDelay = 15f * (1f / 60f);
 
 		// Called every frame. 'delta' is the elapsed time since the previous frame.
 		public override void _Process(double delta)
 		{
+			Vector2 moveDirection = Input.GetVector("left", "right", "up", "down");
+			//float spinDirection = Input.GetAxis("clockwise", "anticlockwise");
+			bool select = Input.IsActionPressed("select");
+			bool cancel = Input.IsActionPressed("cancel");
+			bool pause = Input.IsActionPressed("pause");
 
+			horizontal = moveDirection.X;
+			vertical = moveDirection.Y;
+
+			if (inputDelay > 0)
+			{
+				if (right && horizontal <= 0)
+					right = false;
+				if (left && horizontal >= 0)
+					left = false;
+
+				if (!left && !right)
+					inputDelay = 0;
+				else
+					inputDelay -= delta;
+				//GD.Print("Read Input delay: " + inputDelay);
+			}
+			else if (inputDelay <= 0)
+			{
+				left = horizontal < 0;
+				right = horizontal > 0;
+
+				int offset = 0;
+				if (left)
+					offset -= 1;
+				if (right)
+					offset += 1;
+
+				if (offset != 0)
+				{
+					game.playerHUD.CycleCard(offset > 0);
+					inputDelay = shortInputDelay;
+					//GD.Print("Set Input delay: " + inputDelay + " | L: " + left + ", R: " + right);
+				}
+			}
 		}
 	}
 }
